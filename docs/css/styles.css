@@ -184,6 +184,13 @@ a { color: inherit; text-decoration: none; }
 .model-img.ph-m { min-height: 200px; }
 .model-img.ph-l { min-height: 260px; }
 
+/* Con foto real: la imagen manda, con su relación de aspecto natural */
+.model-img.has-photo { padding: 0; min-height: 0; display: block; background: var(--bg-elevated); }
+.model-img.has-photo img { width: 100%; height: auto; display: block; }
+
+.img-credit { font-size: 0.78rem; color: var(--text-dim); margin: -0.8rem 0 1rem; }
+.img-credit a { text-decoration: underline; }
+
 .model-card-body { padding: 0.8rem 0.9rem 0.9rem; }
 .model-card-body h3 { font-size: 1rem; }
 .model-card-body .meta { font-size: 0.82rem; color: var(--text-dim); }

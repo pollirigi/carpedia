@@ -40,6 +40,56 @@
     "description": "Enzo Ferrari fundó la Scuderia en 1929 y fabricó su primer auto de calle en 1947, casi a regañadientes, para financiar las carreras. Del V12 Colombo al híbrido de 1.200 CV, el cavallino rampante es la marca deportiva más mítica del mundo."
   },
   {
+    "id": "bmw",
+    "name": "BMW",
+    "country": "Alemania",
+    "founded": 1916,
+    "defunct": null,
+    "category": "actual",
+    "logo": "",
+    "description": "Nació haciendo motores de avión (de ahí la hélice estilizada de su logo) y pasó por motos y microcoches antes de definir el sedán deportivo moderno con la Neue Klasse. \"El placer de conducir\" sigue siendo su religión."
+  },
+  {
+    "id": "mercedes-benz",
+    "name": "Mercedes-Benz",
+    "country": "Alemania",
+    "founded": 1926,
+    "defunct": null,
+    "category": "actual",
+    "logo": "",
+    "description": "Heredera directa del Benz Patent-Motorwagen de 1886 —el primer automóvil de la historia—, la marca de la estrella inventó buena parte de la seguridad y el lujo modernos: zonas de deformación, ABS, airbag y la eterna Clase S."
+  },
+  {
+    "id": "toyota",
+    "name": "Toyota",
+    "country": "Japón",
+    "founded": 1937,
+    "defunct": null,
+    "category": "actual",
+    "logo": "",
+    "description": "De los telares Toyoda al mayor fabricante de autos del mundo: sinónimo de confiabilidad, inventor del híbrido de masas con el Prius y dueño de leyendas como el Land Cruiser, el Corolla y el Supra."
+  },
+  {
+    "id": "volkswagen",
+    "name": "Volkswagen",
+    "country": "Alemania",
+    "founded": 1937,
+    "defunct": null,
+    "category": "actual",
+    "logo": "",
+    "description": "El \"auto del pueblo\" cumplió su nombre dos veces: con el Escarabajo, el auto más fabricado sobre una plataforma, y con el Golf, el compacto que definió la categoría. Hoy encabeza uno de los mayores grupos automotrices del mundo."
+  },
+  {
+    "id": "chevrolet",
+    "name": "Chevrolet",
+    "country": "Estados Unidos",
+    "founded": 1911,
+    "defunct": null,
+    "category": "actual",
+    "logo": "",
+    "description": "Fundada por el piloto suizo Louis Chevrolet y el fundador de GM William Durant. La corbatita dorada vistió al Corvette, al Impala, al small-block V8 y a las pickups que mueven América — del Norte y del Sur."
+  },
+  {
     "id": "saab",
     "name": "Saab",
     "country": "Suecia",

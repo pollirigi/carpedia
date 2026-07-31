@@ -89,7 +89,7 @@
     const brand = brandById(model.brandId);
     const img = model.images && model.images[0];
     const media = img
-      ? `<div class="model-img"><img src="${esc(img)}" alt="${esc(model.name)}" loading="lazy"></div>`
+      ? `<div class="model-img has-photo" data-ph-name="${esc(model.name)}" data-ph-style="${placeholderStyle(model.id)}"><img src="${esc(img)}" alt="${esc(model.name)}" loading="lazy"></div>`
       : `<div class="model-img ${placeholderSize(model.id)}" style="${placeholderStyle(model.id)}">${esc(model.name)}</div>`;
     return `
       <article class="model-card">
@@ -183,8 +183,12 @@
     const img = model.images && model.images[0];
 
     const hero = img
-      ? `<div class="detail-hero"><img src="${esc(img)}" alt="${esc(model.name)}">`
+      ? `<div class="detail-hero" data-ph-style="${placeholderStyle(model.id)}"><img src="${esc(img)}" alt="${esc(model.name)}">`
       : `<div class="detail-hero" style="${placeholderStyle(model.id)}">`;
+
+    const credit = img && model.imageSource
+      ? `<p class="img-credit">Foto: <a href="${esc(model.imageSource)}" target="_blank" rel="noopener">Wikipedia / Wikimedia Commons</a> (la licencia de cada imagen figura en la página de origen)</p>`
+      : "";
 
     app.innerHTML = `
       <div class="detail">
@@ -195,6 +199,7 @@
             <p>${esc(model.years)} · ${esc(model.category)}</p>
           </div>
         </div>
+        ${credit}
         <div class="detail-actions">
           ${saveButtonHtml(model.id, true)}
           <a class="btn" href="#/comparar?a=${esc(model.id)}">⚖️ Comparar este modelo</a>
@@ -389,6 +394,25 @@
     document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("active", a.dataset.nav === active));
     window.scrollTo({ top: 0 });
   };
+
+  // Si una imagen remota falla (404, hotlink caído), vuelve al placeholder.
+  document.addEventListener(
+    "error",
+    (e) => {
+      const img = e.target;
+      if (!(img instanceof HTMLImageElement)) return;
+      const wrap = img.closest(".model-img, .detail-hero");
+      if (!wrap) return;
+      img.remove();
+      wrap.style.cssText = wrap.dataset.phStyle || "";
+      if (wrap.classList.contains("model-img")) {
+        wrap.classList.remove("has-photo");
+        wrap.classList.add("ph-m");
+        wrap.textContent = wrap.dataset.phName || "";
+      }
+    },
+    true
+  );
 
   // Delegación global del botón guardar (cards y detalle).
   document.addEventListener("click", (e) => {

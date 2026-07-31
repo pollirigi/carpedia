@@ -87,16 +87,43 @@ Reglas de datos:
 
 ## Catálogo actual
 
-| Marca | Categoría | Modelos |
-|---|---|---|
-| Porsche | actual | 18 (lineup completo de calle: 356, 550, 911, 912, 914, 924, 928, 944, 959, 968, Boxster, Cayman, Carrera GT, Cayenne, Macan, Panamera, 918 Spyder, Taycan) |
-| Lotus | actual | 18 (del Seven al Emeya, incl. Elite ×2, Elan, Elan +2, Europa, Eclat, Esprit, Excel, Elan M100, Elise, Exige, Europa S, Evora, Evija, Emira, Eletre) |
-| Alfa Romeo | actual | 40 (de la RL de 1922 al Junior 2024: 6C, 8C, 1900, Giulietta ×3, Giulia clásica y moderna, coupés 105, Spider, Montreal, Alfasud, Alfetta, GTV6, 33, Arna, 75, 164, SZ, 155, 156, 147, 159, Brera, 8C Competizione, 4C, Stelvio, Tonale…) |
-| Ferrari | actual | 45 (del 166 Inter de 1948 al F80: familia 250, 275, Daytona, Dinos, Berlinetta Boxer, 308→F8, Testarossa, F40, F50, Enzo, LaFerrari, SF90, 296, Purosangue, 12Cilindri…) |
-| Saab | clásica | 14 (92, 93, Sonett, 95, 96, 99, 90, 900, 9000, 9-5, 9-3, 9-2X, 9-7X, 9-4X) |
-| DeLorean | clásica | 1 (DMC-12) |
+| Marca | Categoría | Modelos | Cobertura |
+|---|---|---|---|
+| Porsche | actual | 18 | Lineup completo de calle |
+| Lotus | actual | 18 | Lineup completo de calle |
+| Alfa Romeo | actual | 40 | Lineup completo (post-1922) |
+| Ferrari | actual | 45 | Lineup completo de producción |
+| BMW | actual | 31 | Nameplates principales (primera pasada) |
+| Mercedes-Benz | actual | 31 | Nameplates principales (primera pasada) |
+| Toyota | actual | 33 | Nameplates globales principales (primera pasada) |
+| Volkswagen | actual | 29 | Nameplates principales (primera pasada) |
+| Chevrolet | actual | 34 | Nameplates principales (primera pasada) |
+| Saab | clásica | 14 | Lineup completo |
+| DeLorean | clásica | 1 | Lineup completo |
 
-Criterio: modelos de producción con nameplate propio (no cada trim ni variantes regionales; los derivados exclusivos de circuito, como el Lotus 2-Eleven, quedan fuera). Series ultralimitadas y one-offs también quedan fuera: Ferrari Icona (Monza SP1/SP2, Daytona SP3) y programas Speciale/one-off; Alfa 33 Stradale (1967 y 2023) y Disco Volante. Los Alfa anteriores a 1922 (24 HP, RM…) eran chasis carrozados artesanalmente y quedan pendientes. Próximas marcas sugeridas para llegar a 20-25: Lamborghini, Jaguar, Studebaker, Tucker, Packard, DeSoto, Lancia, Mazda…
+**Total: 11 marcas, 294 modelos.**
+
+Criterio: modelos de producción con nameplate propio (no cada trim ni variantes regionales; los derivados exclusivos de circuito, como el Lotus 2-Eleven, quedan fuera). Series ultralimitadas y one-offs también quedan fuera: Ferrari Icona (Monza SP1/SP2, Daytona SP3); Alfa 33 Stradale (1967 y 2023) y Disco Volante; los Alfa pre-1922 carrozados artesanalmente.
+
+Para las marcas gigantes (BMW, Mercedes, Toyota, VW, Chevrolet) esta es una **primera pasada** con los nameplates principales de su historia global; faltan modelos regionales o menores (p. ej. BMW 600 y X2/X4; Mercedes CLK/CL/Clase V; Toyota Carina/Cressida/Soarer/Sequoia; VW Derby/Bora regionales; Chevrolet Corsica/Beretta/Uplander…). Completar esos huecos es tan simple como agregar entradas a `models.json` y correr `node tools/fetch-images.mjs`.
+
+Próximas marcas sugeridas: Ford, Honda, Nissan, Audi, Lamborghini, Jaguar, Fiat, Peugeot, Renault; y clásicas como Studebaker, Packard, Tucker, DeSoto, Lancia.
+
+## Imágenes
+
+Cada modelo muestra la imagen principal de su artículo de Wikipedia (en inglés), hotlinkeada desde **Wikimedia Commons**:
+
+- `images[0]`: URL del thumbnail (1200 px) en `upload.wikimedia.org`.
+- `imageSource`: artículo o página de Commons de origen — el detalle de cada modelo la enlaza como crédito. Las licencias varían por imagen (CC BY-SA, dominio público, etc.) y figuran en esa página.
+- Si una imagen remota falla, la UI cae automáticamente al placeholder de gradiente.
+
+Para poblar imágenes de modelos nuevos (solo procesa los que no tienen):
+
+```
+node tools/fetch-images.mjs
+```
+
+El script intenta, en orden: el campo `wiki` del modelo, un mapa de títulos especiales (`OVERRIDES`), variantes de "Marca Nombre", y como último recurso una búsqueda de archivos en Commons. Para forzar otro título, agregá `"wiki": "Título exacto del artículo"` a la entrada del modelo. También podés pegar cualquier URL de imagen a mano en `images` — el script no la pisa.
 
 ## Guardados
 
