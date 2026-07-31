@@ -1,0 +1,1128 @@
+[
+  {
+    "id": "porsche-356",
+    "brandId": "porsche",
+    "name": "356",
+    "years": "1948–1965",
+    "generations": [
+      { "code": "356 \"Pre-A\"", "years": "1948–1955" },
+      { "code": "356 A", "years": "1955–1959" },
+      { "code": "356 B", "years": "1959–1963" },
+      { "code": "356 C", "years": "1963–1965" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "356 A 1600 (1956)",
+    "specs": {
+      "engine": { "type": "Bóxer refrigerado por aire", "displacement": "1582 cc", "cylinders": 4, "configuration": "bóxer", "aspiration": "atmosférico", "powerCv": 60, "torqueNm": 110 },
+      "transmission": { "gearbox": "Manual", "gears": 4 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "Barras de torsión y trapecios", "rear": "Eje oscilante con barras de torsión" },
+      "brakes": "Tambores en las 4 ruedas (discos recién en el 356 C)",
+      "performance": { "zeroTo100": 16.5, "topSpeed": 160, "consumption": null },
+      "dimensions": { "length": 3950, "width": 1670, "height": 1310, "wheelbase": 2100, "weight": 885 }
+    },
+    "trivia": "Fue el primer auto de producción con el nombre Porsche. Los primeros 52 ejemplares se fabricaron a mano en Gmünd (Austria) con carrocería de aluminio.",
+    "dataNotes": "Cifras de la versión 1600 de 60 CV; el 356 tuvo muchas variantes (Speedster, Carrera de 4 árboles, etc.) con potencias de 40 a 130 CV."
+  },
+  {
+    "id": "porsche-550",
+    "brandId": "porsche",
+    "name": "550 Spyder",
+    "years": "1953–1956",
+    "generations": [{ "code": "550 / 550 A", "years": "1953–1956" }],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "550 Spyder (1955)",
+    "specs": {
+      "engine": { "type": "Bóxer \"Fuhrmann\" de 4 árboles de levas", "displacement": "1498 cc", "cylinders": 4, "configuration": "bóxer", "aspiration": "atmosférico", "powerCv": 110, "torqueNm": null },
+      "transmission": { "gearbox": "Manual", "gears": 4 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "Barras de torsión", "rear": "Eje oscilante" },
+      "brakes": "Tambores",
+      "performance": { "zeroTo100": null, "topSpeed": 220, "consumption": null },
+      "dimensions": { "length": 3600, "width": 1550, "height": null, "wheelbase": 2100, "weight": 590 }
+    },
+    "trivia": "James Dean murió en 1955 al volante de su 550 apodado \"Little Bastard\". Se construyeron alrededor de 90 unidades, homologadas para calle pero pensadas para competición.",
+    "dataNotes": "Auto de competición matriculable; algunas dimensiones exactas no están confirmadas."
+  },
+  {
+    "id": "porsche-911",
+    "brandId": "porsche",
+    "name": "911",
+    "years": "1964–presente",
+    "generations": [
+      { "code": "911 original (901)", "years": "1964–1989" },
+      { "code": "964", "years": "1989–1994" },
+      { "code": "993 (último refrigerado por aire)", "years": "1994–1998" },
+      { "code": "996", "years": "1998–2004" },
+      { "code": "997", "years": "2004–2012" },
+      { "code": "991", "years": "2012–2019" },
+      { "code": "992", "years": "2019–presente" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "992 Carrera (2019)",
+    "specs": {
+      "engine": { "type": "Bóxer 6 biturbo", "displacement": "2981 cc", "cylinders": 6, "configuration": "bóxer", "aspiration": "turbo", "powerCv": 385, "torqueNm": 450 },
+      "transmission": { "gearbox": "PDK de doble embrague (manual 7 opcional)", "gears": 8 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "McPherson", "rear": "Multibrazo" },
+      "brakes": "Discos ventilados y perforados en las 4 ruedas",
+      "performance": { "zeroTo100": 4.2, "topSpeed": 293, "consumption": "9,0 l/100 km (aprox.)" },
+      "dimensions": { "length": 4519, "width": 1852, "height": 1300, "wheelbase": 2450, "weight": 1505 }
+    },
+    "trivia": "Iba a llamarse 901, pero Peugeot tenía registrados en Francia los nombres de tres cifras con un 0 en el medio, así que se rebautizó 911 antes de llegar a los concesionarios."
+  },
+  {
+    "id": "porsche-912",
+    "brandId": "porsche",
+    "name": "912",
+    "years": "1965–1969 (y 912E en 1976)",
+    "generations": [
+      { "code": "912", "years": "1965–1969" },
+      { "code": "912E (solo EE.UU.)", "years": "1976" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "912 (1965)",
+    "specs": {
+      "engine": { "type": "Bóxer refrigerado por aire (derivado del 356 SC)", "displacement": "1582 cc", "cylinders": 4, "configuration": "bóxer", "aspiration": "atmosférico", "powerCv": 90, "torqueNm": null },
+      "transmission": { "gearbox": "Manual", "gears": 4 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "Barras de torsión", "rear": "Barras de torsión" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": 11.9, "topSpeed": 185, "consumption": null },
+      "dimensions": { "length": 4163, "width": 1610, "height": 1320, "wheelbase": 2211, "weight": 970 }
+    },
+    "trivia": "Era el 911 \"accesible\": misma carrocería pero con el 4 cilindros del 356. Durante sus primeros años se vendió más que el propio 911.",
+    "dataNotes": "Caja de 5 marchas opcional; el torque exacto de la versión original no está confirmado."
+  },
+  {
+    "id": "porsche-914",
+    "brandId": "porsche",
+    "name": "914",
+    "years": "1969–1976",
+    "generations": [
+      { "code": "914/4 (bóxer 4 VW)", "years": "1969–1976" },
+      { "code": "914/6 (bóxer 6 Porsche)", "years": "1969–1972" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "914 2.0 (1973)",
+    "specs": {
+      "engine": { "type": "Bóxer refrigerado por aire, motor central", "displacement": "1971 cc", "cylinders": 4, "configuration": "bóxer", "aspiration": "atmosférico", "powerCv": 100, "torqueNm": null },
+      "transmission": { "gearbox": "Manual", "gears": 5 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "Barras de torsión", "rear": "Muelles helicoidales" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": 10.5, "topSpeed": 190, "consumption": null },
+      "dimensions": { "length": 3985, "width": 1650, "height": 1220, "wheelbase": 2450, "weight": 950 }
+    },
+    "trivia": "Desarrollado junto a Volkswagen y vendido en Europa como \"VW-Porsche\". Su techo targa desmontable se guardaba en el baúl trasero."
+  },
+  {
+    "id": "porsche-924",
+    "brandId": "porsche",
+    "name": "924",
+    "years": "1976–1988",
+    "generations": [
+      { "code": "924 / 924 Turbo", "years": "1976–1985" },
+      { "code": "924 S (motor 2.5 del 944)", "years": "1986–1988" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "924 2.0 (1976)",
+    "specs": {
+      "engine": { "type": "4 en línea delantero, refrigerado por agua", "displacement": "1984 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 125, "torqueNm": 165 },
+      "transmission": { "gearbox": "Manual (transeje trasero)", "gears": 4 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "McPherson", "rear": "Brazos semi-arrastrados con barras de torsión" },
+      "brakes": "Discos delanteros, tambores traseros",
+      "performance": { "zeroTo100": 9.6, "topSpeed": 204, "consumption": null },
+      "dimensions": { "length": 4200, "width": 1685, "height": 1270, "wheelbase": 2400, "weight": 1080 }
+    },
+    "trivia": "Nació como un proyecto encargado por Volkswagen que Porsche terminó comprando de vuelta. Fue el primer Porsche con motor delantero refrigerado por agua."
+  },
+  {
+    "id": "porsche-928",
+    "brandId": "porsche",
+    "name": "928",
+    "years": "1977–1995",
+    "generations": [
+      { "code": "928 / S / S2", "years": "1977–1986" },
+      { "code": "S4 / GT / GTS", "years": "1987–1995" }
+    ],
+    "category": "gran turismo",
+    "images": [],
+    "specsVersion": "928 (1978)",
+    "specs": {
+      "engine": { "type": "V8 delantero refrigerado por agua", "displacement": "4474 cc", "cylinders": 8, "configuration": "V", "aspiration": "atmosférico", "powerCv": 240, "torqueNm": 350 },
+      "transmission": { "gearbox": "Manual 5 o automática 3 (transeje trasero)", "gears": 5 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "Doble trapecio", "rear": "Eje \"Weissach\" multibrazo" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 6.8, "topSpeed": 230, "consumption": null },
+      "dimensions": { "length": 4447, "width": 1836, "height": 1313, "wheelbase": 2500, "weight": 1450 }
+    },
+    "trivia": "Se diseñó para reemplazar al 911 y es el único auto deportivo que ganó el premio Auto Europeo del Año (1978). El 911 le terminó sobreviviendo."
+  },
+  {
+    "id": "porsche-944",
+    "brandId": "porsche",
+    "name": "944",
+    "years": "1982–1991",
+    "generations": [
+      { "code": "944 / 944 Turbo", "years": "1982–1989" },
+      { "code": "944 S / S2", "years": "1987–1991" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "944 2.5 (1982)",
+    "specs": {
+      "engine": { "type": "4 en línea delantero con ejes equilibradores", "displacement": "2479 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 163, "torqueNm": 205 },
+      "transmission": { "gearbox": "Manual (transeje trasero)", "gears": 5 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "McPherson", "rear": "Brazos semi-arrastrados con barras de torsión" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": 8.4, "topSpeed": 220, "consumption": null },
+      "dimensions": { "length": 4200, "width": 1735, "height": 1275, "wheelbase": 2400, "weight": 1180 }
+    },
+    "trivia": "Su suave 4 cilindros de 2,5 litros usaba ejes equilibradores bajo licencia de Mitsubishi. Fue durante años el Porsche más vendido."
+  },
+  {
+    "id": "porsche-959",
+    "brandId": "porsche",
+    "name": "959",
+    "years": "1986–1993",
+    "generations": [{ "code": "959 (serie limitada, ~292 unidades)", "years": "1986–1988 (algunas unidades finales en 1992–1993)" }],
+    "category": "superdeportivo",
+    "images": [],
+    "specsVersion": "959 Komfort (1987)",
+    "specs": {
+      "engine": { "type": "Bóxer 6 biturbo secuencial, culatas refrigeradas por agua", "displacement": "2850 cc", "cylinders": 6, "configuration": "bóxer", "aspiration": "turbo", "powerCv": 450, "torqueNm": 500 },
+      "transmission": { "gearbox": "Manual", "gears": 6 },
+      "drivetrain": "integral (AWD con reparto variable)",
+      "suspension": { "front": "Doble trapecio con amortiguación ajustable", "rear": "Doble trapecio con amortiguación ajustable" },
+      "brakes": "Discos ventilados con ABS",
+      "performance": { "zeroTo100": 3.7, "topSpeed": 315, "consumption": null },
+      "dimensions": { "length": 4260, "width": 1840, "height": 1280, "wheelbase": 2272, "weight": 1450 }
+    },
+    "trivia": "Al lanzarse fue el auto de producción más rápido del mundo, y una versión rally ganó el Dakar de 1986. Estrenó tecnologías (AWD variable, biturbo secuencial) que después heredó el 911."
+  },
+  {
+    "id": "porsche-968",
+    "brandId": "porsche",
+    "name": "968",
+    "years": "1991–1995",
+    "generations": [{ "code": "968 / CS / Turbo S", "years": "1991–1995" }],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "968 (1992)",
+    "specs": {
+      "engine": { "type": "4 en línea con VarioCam", "displacement": "2990 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 240, "torqueNm": 305 },
+      "transmission": { "gearbox": "Manual 6 o Tiptronic 4", "gears": 6 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "McPherson", "rear": "Brazos semi-arrastrados con barras de torsión" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 6.5, "topSpeed": 252, "consumption": null },
+      "dimensions": { "length": 4320, "width": 1735, "height": 1275, "wheelbase": 2400, "weight": 1370 }
+    },
+    "trivia": "Evolución final de la saga 924/944 y uno de los 4 cilindros más grandes de un auto de calle moderno (3,0 litros). Cerró la era de los Porsche \"transaxle\"."
+  },
+  {
+    "id": "porsche-boxster",
+    "brandId": "porsche",
+    "name": "Boxster / 718 Boxster",
+    "years": "1996–presente",
+    "generations": [
+      { "code": "986", "years": "1996–2004" },
+      { "code": "987", "years": "2004–2012" },
+      { "code": "981", "years": "2012–2016" },
+      { "code": "982 (718)", "years": "2016–presente" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "718 Boxster 2.0 (2016)",
+    "specs": {
+      "engine": { "type": "Bóxer 4 turbo, motor central", "displacement": "1988 cc", "cylinders": 4, "configuration": "bóxer", "aspiration": "turbo", "powerCv": 300, "torqueNm": 380 },
+      "transmission": { "gearbox": "Manual 6 o PDK 7", "gears": 6 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "McPherson", "rear": "McPherson" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 5.1, "topSpeed": 275, "consumption": "8,0 l/100 km (aprox.)" },
+      "dimensions": { "length": 4379, "width": 1801, "height": 1281, "wheelbase": 2475, "weight": 1335 }
+    },
+    "trivia": "El roadster que salvó financieramente a Porsche en los 90: compartía la mitad delantera con el 911 (996) para abaratar costos. Su nombre mezcla \"boxer\" y \"roadster\"."
+  },
+  {
+    "id": "porsche-cayman",
+    "brandId": "porsche",
+    "name": "Cayman / 718 Cayman",
+    "years": "2005–presente",
+    "generations": [
+      { "code": "987c", "years": "2005–2012" },
+      { "code": "981c", "years": "2013–2016" },
+      { "code": "982 (718)", "years": "2016–presente" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "718 Cayman 2.0 (2016)",
+    "specs": {
+      "engine": { "type": "Bóxer 4 turbo, motor central", "displacement": "1988 cc", "cylinders": 4, "configuration": "bóxer", "aspiration": "turbo", "powerCv": 300, "torqueNm": 380 },
+      "transmission": { "gearbox": "Manual 6 o PDK 7", "gears": 6 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "McPherson", "rear": "McPherson" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 5.1, "topSpeed": 275, "consumption": "8,0 l/100 km (aprox.)" },
+      "dimensions": { "length": 4379, "width": 1801, "height": 1295, "wheelbase": 2475, "weight": 1340 }
+    },
+    "trivia": "Es el coupé del Boxster y lleva el nombre del caimán. Las versiones GT4 y GT4 RS lo convirtieron en el favorito de los puristas por encima de algunos 911."
+  },
+  {
+    "id": "porsche-carrera-gt",
+    "brandId": "porsche",
+    "name": "Carrera GT",
+    "years": "2003–2006",
+    "generations": [{ "code": "980 (1.270 unidades)", "years": "2003–2006" }],
+    "category": "superdeportivo",
+    "images": [],
+    "specsVersion": "Carrera GT (2004)",
+    "specs": {
+      "engine": { "type": "V10 atmosférico, motor central, monocasco de carbono", "displacement": "5733 cc", "cylinders": 10, "configuration": "V", "aspiration": "atmosférico", "powerCv": 612, "torqueNm": 590 },
+      "transmission": { "gearbox": "Manual", "gears": 6 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "Doble trapecio (push-rod)", "rear": "Doble trapecio (push-rod)" },
+      "brakes": "Discos carbocerámicos (PCCB)",
+      "performance": { "zeroTo100": 3.9, "topSpeed": 330, "consumption": null },
+      "dimensions": { "length": 4613, "width": 1921, "height": 1166, "wheelbase": 2730, "weight": 1380 }
+    },
+    "trivia": "Su V10 nació de un proyecto de competición (pensado para F1 y luego Le Mans) que nunca corrió. Embrague cerámico pequeño y sin ayudas: uno de los últimos superdeportivos analógicos."
+  },
+  {
+    "id": "porsche-cayenne",
+    "brandId": "porsche",
+    "name": "Cayenne",
+    "years": "2002–presente",
+    "generations": [
+      { "code": "E1 (955/957)", "years": "2002–2010" },
+      { "code": "E2 (958)", "years": "2010–2017" },
+      { "code": "E3 (9YA)", "years": "2017–presente" }
+    ],
+    "category": "SUV",
+    "images": [],
+    "specsVersion": "Cayenne V6 (E3, 2018)",
+    "specs": {
+      "engine": { "type": "V6 turbo", "displacement": "2995 cc", "cylinders": 6, "configuration": "V", "aspiration": "turbo", "powerCv": 340, "torqueNm": 450 },
+      "transmission": { "gearbox": "Automática Tiptronic S", "gears": 8 },
+      "drivetrain": "integral (AWD)",
+      "suspension": { "front": "Multibrazo (neumática opcional)", "rear": "Multibrazo (neumática opcional)" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 6.2, "topSpeed": 245, "consumption": "11,0 l/100 km (aprox.)" },
+      "dimensions": { "length": 4918, "width": 1983, "height": 1696, "wheelbase": 2895, "weight": 1985 }
+    },
+    "trivia": "El SUV que escandalizó a los puristas y salvó el negocio: desde su lanzamiento financia el desarrollo de los deportivos. Compartió plataforma con el VW Touareg y el Audi Q7."
+  },
+  {
+    "id": "porsche-macan",
+    "brandId": "porsche",
+    "name": "Macan",
+    "years": "2014–presente",
+    "generations": [
+      { "code": "95B (combustión)", "years": "2014–2024" },
+      { "code": "Macan Eléctrico (PPE)", "years": "2024–presente" }
+    ],
+    "category": "SUV",
+    "images": [],
+    "specsVersion": "Macan S (2014)",
+    "specs": {
+      "engine": { "type": "V6 biturbo", "displacement": "2997 cc", "cylinders": 6, "configuration": "V", "aspiration": "turbo", "powerCv": 340, "torqueNm": 460 },
+      "transmission": { "gearbox": "PDK de doble embrague", "gears": 7 },
+      "drivetrain": "integral (AWD)",
+      "suspension": { "front": "Doble trapecio", "rear": "Multibrazo" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 5.4, "topSpeed": 254, "consumption": "9,0 l/100 km (aprox.)" },
+      "dimensions": { "length": 4681, "width": 1923, "height": 1624, "wheelbase": 2807, "weight": 1865 }
+    },
+    "trivia": "Su nombre viene de la palabra indonesia para \"tigre\". La primera generación compartía base con el Audi Q5; la segunda es 100% eléctrica."
+  },
+  {
+    "id": "porsche-panamera",
+    "brandId": "porsche",
+    "name": "Panamera",
+    "years": "2009–presente",
+    "generations": [
+      { "code": "970", "years": "2009–2016" },
+      { "code": "971", "years": "2016–2023" },
+      { "code": "972", "years": "2023–presente" }
+    ],
+    "category": "sedán / gran turismo",
+    "images": [],
+    "specsVersion": "Panamera 4S (971, 2016)",
+    "specs": {
+      "engine": { "type": "V6 biturbo", "displacement": "2894 cc", "cylinders": 6, "configuration": "V", "aspiration": "turbo", "powerCv": 440, "torqueNm": 550 },
+      "transmission": { "gearbox": "PDK de doble embrague", "gears": 8 },
+      "drivetrain": "integral (AWD)",
+      "suspension": { "front": "Doble trapecio (neumática opcional)", "rear": "Multibrazo (neumática opcional)" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 4.4, "topSpeed": 289, "consumption": "8,2 l/100 km (aprox.)" },
+      "dimensions": { "length": 5049, "width": 1937, "height": 1423, "wheelbase": 2950, "weight": 1870 }
+    },
+    "trivia": "El nombre homenajea a la Carrera Panamericana. Existe en versiones Sport Turismo (familiar) e híbridas enchufables de más de 700 CV."
+  },
+  {
+    "id": "porsche-918",
+    "brandId": "porsche",
+    "name": "918 Spyder",
+    "years": "2013–2015",
+    "generations": [{ "code": "918 (918 unidades)", "years": "2013–2015" }],
+    "category": "superdeportivo híbrido",
+    "images": [],
+    "specsVersion": "918 Spyder (2014)",
+    "specs": {
+      "engine": { "type": "Híbrido enchufable: V8 4.6 atmosférico + 2 motores eléctricos", "displacement": "4593 cc", "cylinders": 8, "configuration": "V", "aspiration": "atmosférico (sistema híbrido)", "powerCv": 887, "torqueNm": 1280 },
+      "transmission": { "gearbox": "PDK de doble embrague", "gears": 7 },
+      "drivetrain": "integral (eléctrico adelante, combustión atrás)",
+      "suspension": { "front": "Doble trapecio", "rear": "Multibrazo" },
+      "brakes": "Discos carbocerámicos (PCCB)",
+      "performance": { "zeroTo100": 2.6, "topSpeed": 345, "consumption": "3,1 l/100 km (ciclo homologado híbrido)" },
+      "dimensions": { "length": 4643, "width": 1940, "height": 1167, "wheelbase": 2730, "weight": 1674 }
+    },
+    "trivia": "Fue el primer auto de producción en bajar de 7 minutos en Nürburgring (6:57 en 2013). Potencia combinada de 887 CV; el V8 deriva del prototipo de carreras RS Spyder."
+  },
+  {
+    "id": "porsche-taycan",
+    "brandId": "porsche",
+    "name": "Taycan",
+    "years": "2019–presente",
+    "generations": [
+      { "code": "Taycan (J1)", "years": "2019–2024" },
+      { "code": "Taycan restyling", "years": "2024–presente" }
+    ],
+    "category": "sedán eléctrico",
+    "images": [],
+    "specsVersion": "Taycan Turbo S (2020)",
+    "specs": {
+      "engine": { "type": "100% eléctrico, 2 motores síncronos, arquitectura 800 V", "displacement": null, "cylinders": null, "configuration": "un motor por eje", "aspiration": "eléctrico", "powerCv": 761, "torqueNm": 1050 },
+      "transmission": { "gearbox": "Caja de 2 velocidades en el eje trasero", "gears": 2 },
+      "drivetrain": "integral (AWD)",
+      "suspension": { "front": "Doble trapecio, neumática", "rear": "Multibrazo, neumática" },
+      "brakes": "Discos con recubrimiento de carburo de tungsteno (cerámicos opcionales)",
+      "performance": { "zeroTo100": 2.8, "topSpeed": 260, "consumption": "Consumo eléctrico ~23 kWh/100 km (batería 93,4 kWh)" },
+      "dimensions": { "length": 4963, "width": 1966, "height": 1381, "wheelbase": 2900, "weight": 2295 }
+    },
+    "trivia": "Primer Porsche 100% eléctrico y primer auto de producción con arquitectura de 800 voltios, que permite cargas ultrarrápidas. Los 761 CV del Turbo S son en modo overboost con launch control."
+  },
+  {
+    "id": "lotus-seven",
+    "brandId": "lotus",
+    "name": "Seven",
+    "years": "1957–1972",
+    "generations": [
+      { "code": "Series 1–4", "years": "1957–1972" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "Seven S2 Ford 1500 (años 60)",
+    "specs": {
+      "engine": { "type": "4 en línea Ford (varias motorizaciones de 1.0 a 1.6)", "displacement": "1498 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 66, "torqueNm": null },
+      "transmission": { "gearbox": "Manual", "gears": 4 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "Doble trapecio", "rear": "Eje rígido" },
+      "brakes": "Tambores (discos delanteros en versiones posteriores)",
+      "performance": { "zeroTo100": null, "topSpeed": null, "consumption": null },
+      "dimensions": { "length": 3380, "width": 1560, "height": null, "wheelbase": 2260, "weight": 500 }
+    },
+    "trivia": "La expresión máxima del \"simplify, then add lightness\" de Chapman. En 1973 Lotus vendió los derechos a Caterham, que lo sigue fabricando hasta hoy.",
+    "dataNotes": "Tuvo decenas de motorizaciones; las prestaciones exactas varían mucho según versión y no se listan para no inventar cifras."
+  },
+  {
+    "id": "lotus-elite-type14",
+    "brandId": "lotus",
+    "name": "Elite (Type 14)",
+    "years": "1957–1963",
+    "generations": [{ "code": "Type 14", "years": "1957–1963" }],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "Elite (1959)",
+    "specs": {
+      "engine": { "type": "4 en línea Coventry Climax", "displacement": "1216 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 76, "torqueNm": null },
+      "transmission": { "gearbox": "Manual", "gears": 4 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "Doble trapecio", "rear": "Independiente (puntal \"Chapman\")" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": null, "topSpeed": 180, "consumption": null },
+      "dimensions": { "length": 3760, "width": 1499, "height": 1170, "wheelbase": 2248, "weight": 500 }
+    },
+    "trivia": "Primer auto de producción con monocasco íntegro de fibra de vidrio. Bellísimo y aerodinámico (Cd ~0,29), pero tan caro de fabricar que Lotus perdía dinero con cada unidad."
+  },
+  {
+    "id": "lotus-elan",
+    "brandId": "lotus",
+    "name": "Elan",
+    "years": "1962–1975",
+    "generations": [
+      { "code": "S1–S4 / Sprint", "years": "1962–1975" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "Elan S3 (1966)",
+    "specs": {
+      "engine": { "type": "4 en línea \"Lotus Twin Cam\"", "displacement": "1558 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 105, "torqueNm": null },
+      "transmission": { "gearbox": "Manual", "gears": 4 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "Doble trapecio", "rear": "Puntal Chapman" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": 8.5, "topSpeed": 185, "consumption": null },
+      "dimensions": { "length": 3683, "width": 1422, "height": 1156, "wheelbase": 2134, "weight": 680 }
+    },
+    "trivia": "Chasis \"backbone\" de acero y carrocería de fibra: menos de 700 kg. Mazda lo estudió a fondo como inspiración directa del MX-5 Miata."
+  },
+  {
+    "id": "lotus-elan-plus2",
+    "brandId": "lotus",
+    "name": "Elan +2",
+    "years": "1967–1974",
+    "generations": [{ "code": "+2 / +2S", "years": "1967–1974" }],
+    "category": "deportivo 2+2",
+    "images": [],
+    "specsVersion": "Elan +2S (1969)",
+    "specs": {
+      "engine": { "type": "4 en línea \"Lotus Twin Cam\"", "displacement": "1558 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 118, "torqueNm": null },
+      "transmission": { "gearbox": "Manual", "gears": 4 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "Doble trapecio", "rear": "Puntal Chapman" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": null, "topSpeed": 190, "consumption": null },
+      "dimensions": { "length": 4318, "width": 1680, "height": 1194, "wheelbase": 2438, "weight": 880 }
+    },
+    "trivia": "La versión familiar del Elan: dos plazas traseras para chicos, pensada para que los clientes de Lotus no tuvieran que irse de la marca al tener hijos."
+  },
+  {
+    "id": "lotus-europa",
+    "brandId": "lotus",
+    "name": "Europa",
+    "years": "1966–1975",
+    "generations": [
+      { "code": "S1/S2 (motor Renault)", "years": "1966–1971" },
+      { "code": "Twin Cam / Special", "years": "1971–1975" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "Europa Special (1972)",
+    "specs": {
+      "engine": { "type": "4 en línea Lotus Twin Cam \"Big Valve\", motor central", "displacement": "1558 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 126, "torqueNm": null },
+      "transmission": { "gearbox": "Manual", "gears": 5 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "Doble trapecio", "rear": "Brazos arrastrados con semiejes trabajantes" },
+      "brakes": "Discos delanteros, tambores traseros",
+      "performance": { "zeroTo100": 7.7, "topSpeed": 195, "consumption": null },
+      "dimensions": { "length": 4000, "width": 1638, "height": 1080, "wheelbase": 2311, "weight": 740 }
+    },
+    "trivia": "Uno de los primeros autos de calle con motor central \"accesibles\" del mundo. Con apenas 1,08 m de alto, era famoso por su visibilidad trasera casi nula."
+  },
+  {
+    "id": "lotus-elite-type75",
+    "brandId": "lotus",
+    "name": "Elite (Type 75/83)",
+    "years": "1974–1982",
+    "generations": [{ "code": "Type 75 / 83", "years": "1974–1982" }],
+    "category": "gran turismo",
+    "images": [],
+    "specsVersion": "Elite 501 (1974)",
+    "specs": {
+      "engine": { "type": "4 en línea Lotus 907, 16 válvulas", "displacement": "1973 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 155, "torqueNm": null },
+      "transmission": { "gearbox": "Manual", "gears": 5 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "Doble trapecio", "rear": "Brazos arrastrados" },
+      "brakes": "Discos delanteros, tambores traseros (inboard)",
+      "performance": { "zeroTo100": null, "topSpeed": 200, "consumption": null },
+      "dimensions": { "length": 4460, "width": 1816, "height": 1207, "wheelbase": 2483, "weight": 1105 }
+    },
+    "trivia": "Un \"shooting brake\" de 4 plazas con el que Chapman quiso llevar a Lotus al segmento premium en plena crisis del petróleo. Rarísimo hoy."
+  },
+  {
+    "id": "lotus-eclat",
+    "brandId": "lotus",
+    "name": "Eclat",
+    "years": "1975–1982",
+    "generations": [{ "code": "Type 76 / 84", "years": "1975–1982" }],
+    "category": "gran turismo",
+    "images": [],
+    "specsVersion": "Eclat S2.2 (1980)",
+    "specs": {
+      "engine": { "type": "4 en línea Lotus 912", "displacement": "2174 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 160, "torqueNm": null },
+      "transmission": { "gearbox": "Manual", "gears": 5 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "Doble trapecio", "rear": "Brazos arrastrados" },
+      "brakes": "Discos delanteros, tambores traseros",
+      "performance": { "zeroTo100": null, "topSpeed": 205, "consumption": null },
+      "dimensions": { "length": 4460, "width": 1816, "height": 1207, "wheelbase": 2483, "weight": 1080 }
+    },
+    "trivia": "Era el Elite con cola fastback convencional, más barato y algo más liviano. Evolucionó en el Excel al sumar mecánica Toyota."
+  },
+  {
+    "id": "lotus-esprit",
+    "brandId": "lotus",
+    "name": "Esprit",
+    "years": "1976–2004",
+    "generations": [
+      { "code": "S1–S3 (diseño Giugiaro)", "years": "1976–1987" },
+      { "code": "X180 / S4 (rediseño Stevens)", "years": "1987–1996" },
+      { "code": "Esprit V8", "years": "1996–2004" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "Esprit V8 (1996)",
+    "specs": {
+      "engine": { "type": "V8 biturbo, motor central", "displacement": "3506 cc", "cylinders": 8, "configuration": "V", "aspiration": "turbo", "powerCv": 355, "torqueNm": 400 },
+      "transmission": { "gearbox": "Manual", "gears": 5 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "Doble trapecio", "rear": "Multibrazo" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 4.5, "topSpeed": 281, "consumption": null },
+      "dimensions": { "length": 4414, "width": 1883, "height": 1150, "wheelbase": 2420, "weight": 1380 }
+    },
+    "trivia": "El Esprit de James Bond se convertía en submarino en \"La espía que me amó\" (1977). Su silueta en cuña original fue obra de Giorgetto Giugiaro."
+  },
+  {
+    "id": "lotus-excel",
+    "brandId": "lotus",
+    "name": "Excel",
+    "years": "1982–1992",
+    "generations": [{ "code": "Excel / SE / SA", "years": "1982–1992" }],
+    "category": "gran turismo",
+    "images": [],
+    "specsVersion": "Excel SE (1986)",
+    "specs": {
+      "engine": { "type": "4 en línea Lotus 912", "displacement": "2174 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 180, "torqueNm": null },
+      "transmission": { "gearbox": "Manual (caja Toyota)", "gears": 5 },
+      "drivetrain": "trasera",
+      "suspension": { "front": "Doble trapecio", "rear": "Brazos arrastrados" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": 7.1, "topSpeed": 210, "consumption": null },
+      "dimensions": { "length": 4394, "width": 1816, "height": 1194, "wheelbase": 2483, "weight": 1130 }
+    },
+    "trivia": "Usaba caja, diferencial y frenos de Toyota, fruto de la participación accionaria de Toyota en Lotus a comienzos de los 80."
+  },
+  {
+    "id": "lotus-elan-m100",
+    "brandId": "lotus",
+    "name": "Elan (M100)",
+    "years": "1989–1995",
+    "generations": [
+      { "code": "M100 (era GM)", "years": "1989–1992" },
+      { "code": "S2 (era Bugatti)", "years": "1994–1995" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "Elan SE Turbo (1990)",
+    "specs": {
+      "engine": { "type": "4 en línea Isuzu turbo", "displacement": "1588 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "turbo", "powerCv": 167, "torqueNm": 200 },
+      "transmission": { "gearbox": "Manual", "gears": 5 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "Doble trapecio sobre subchasis \"raft\"", "rear": "Doble trapecio" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": 6.7, "topSpeed": 220, "consumption": null },
+      "dimensions": { "length": 3803, "width": 1734, "height": 1230, "wheelbase": 2250, "weight": 1020 }
+    },
+    "trivia": "El único Lotus de tracción delantera de la historia. Dinámicamente brillante, pero carísimo de desarrollar: se dice que fue de los roadster FWD que mejor doblaban de su época."
+  },
+  {
+    "id": "lotus-elise",
+    "brandId": "lotus",
+    "name": "Elise",
+    "years": "1996–2021",
+    "generations": [
+      { "code": "S1 (motor Rover K)", "years": "1996–2001" },
+      { "code": "S2 (Rover, luego Toyota)", "years": "2001–2011" },
+      { "code": "S3 (Toyota)", "years": "2011–2021" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "Elise S1 1.8 (1996)",
+    "specs": {
+      "engine": { "type": "4 en línea Rover serie K, motor central", "displacement": "1796 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 120, "torqueNm": 165 },
+      "transmission": { "gearbox": "Manual", "gears": 5 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "Doble trapecio", "rear": "Doble trapecio" },
+      "brakes": "Discos (metal matrix en las primeras unidades)",
+      "performance": { "zeroTo100": 5.9, "topSpeed": 202, "consumption": null },
+      "dimensions": { "length": 3726, "width": 1701, "height": 1202, "wheelbase": 2300, "weight": 725 }
+    },
+    "trivia": "Su chasis de perfiles de aluminio extruido y pegado con adhesivo pesaba solo 68 kg, una revolución. Se llama así por Elisa Artioli, nieta del entonces presidente de Lotus y Bugatti."
+  },
+  {
+    "id": "lotus-exige",
+    "brandId": "lotus",
+    "name": "Exige",
+    "years": "2000–2021",
+    "generations": [
+      { "code": "S1 (Rover K)", "years": "2000–2001" },
+      { "code": "S2 (Toyota 1.8)", "years": "2004–2011" },
+      { "code": "S3 (Toyota V6)", "years": "2012–2021" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "Exige Sport 350 (2016)",
+    "specs": {
+      "engine": { "type": "V6 Toyota sobrealimentado, motor central", "displacement": "3456 cc", "cylinders": 6, "configuration": "V", "aspiration": "sobrealimentado (compresor)", "powerCv": 350, "torqueNm": 400 },
+      "transmission": { "gearbox": "Manual", "gears": 6 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "Doble trapecio", "rear": "Doble trapecio" },
+      "brakes": "Discos ventilados AP Racing",
+      "performance": { "zeroTo100": 3.9, "topSpeed": 274, "consumption": null },
+      "dimensions": { "length": 4084, "width": 1802, "height": 1129, "wheelbase": 2370, "weight": 1125 }
+    },
+    "trivia": "Nació como la versión coupé \"de circuito\" del Elise y terminó con V6 sobrealimentado: uno de los autos con mejor agarre por libra esterlina de su época."
+  },
+  {
+    "id": "lotus-europa-s",
+    "brandId": "lotus",
+    "name": "Europa S",
+    "years": "2006–2010",
+    "generations": [{ "code": "Europa S / SE", "years": "2006–2010" }],
+    "category": "gran turismo",
+    "images": [],
+    "specsVersion": "Europa S (2006)",
+    "specs": {
+      "engine": { "type": "4 en línea GM turbo, motor central", "displacement": "1998 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "turbo", "powerCv": 200, "torqueNm": 272 },
+      "transmission": { "gearbox": "Manual", "gears": 6 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "Doble trapecio", "rear": "Doble trapecio" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": 5.8, "topSpeed": 230, "consumption": null },
+      "dimensions": { "length": 3900, "width": 1714, "height": 1120, "wheelbase": 2330, "weight": 995 }
+    },
+    "trivia": "Un intento de GT \"cómodo\" sobre la base del Elise, con motor turbo de origen GM. Se vendió poco y hoy es una rareza."
+  },
+  {
+    "id": "lotus-evora",
+    "brandId": "lotus",
+    "name": "Evora",
+    "years": "2009–2021",
+    "generations": [
+      { "code": "Evora / Evora S", "years": "2009–2015" },
+      { "code": "Evora 400 / GT410 / GT430 / GT", "years": "2015–2021" }
+    ],
+    "category": "gran turismo",
+    "images": [],
+    "specsVersion": "Evora 400 (2015)",
+    "specs": {
+      "engine": { "type": "V6 Toyota sobrealimentado, motor central", "displacement": "3456 cc", "cylinders": 6, "configuration": "V", "aspiration": "sobrealimentado (compresor)", "powerCv": 406, "torqueNm": 410 },
+      "transmission": { "gearbox": "Manual 6 o automática 6", "gears": 6 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "Doble trapecio", "rear": "Doble trapecio" },
+      "brakes": "Discos ventilados AP Racing",
+      "performance": { "zeroTo100": 4.2, "topSpeed": 300, "consumption": null },
+      "dimensions": { "length": 4394, "width": 1845, "height": 1229, "wheelbase": 2575, "weight": 1395 }
+    },
+    "trivia": "Único Lotus moderno con configuración 2+2 opcional. Fue la base del regreso de Lotus al mercado estadounidense."
+  },
+  {
+    "id": "lotus-evija",
+    "brandId": "lotus",
+    "name": "Evija",
+    "years": "2020–presente",
+    "generations": [{ "code": "Type 130 (130 unidades)", "years": "2020–presente" }],
+    "category": "hiperdeportivo eléctrico",
+    "images": [],
+    "specsVersion": "Evija (2021)",
+    "specs": {
+      "engine": { "type": "100% eléctrico, 4 motores (uno por rueda)", "displacement": null, "cylinders": null, "configuration": "un motor por rueda", "aspiration": "eléctrico", "powerCv": 2000, "torqueNm": 1700 },
+      "transmission": { "gearbox": "Reducción directa", "gears": 1 },
+      "drivetrain": "integral (vectorización de par en las 4 ruedas)",
+      "suspension": { "front": "Doble trapecio push-rod", "rear": "Doble trapecio push-rod" },
+      "brakes": "Discos carbocerámicos AP Racing",
+      "performance": { "zeroTo100": 3.0, "topSpeed": 320, "consumption": "Batería de 93 kWh" },
+      "dimensions": { "length": 4459, "width": 2000, "height": 1122, "wheelbase": 2735, "weight": 1680 }
+    },
+    "trivia": "El primer hiperdeportivo eléctrico británico, con unos 2.000 CV declarados y túneles Venturi que atraviesan la carrocería. Producción limitada a 130 unidades por el número de proyecto (Type 130).",
+    "dataNotes": "El 0-100 exacto no fue homologado públicamente; Lotus declara \"menos de 3 segundos\"."
+  },
+  {
+    "id": "lotus-emira",
+    "brandId": "lotus",
+    "name": "Emira",
+    "years": "2022–presente",
+    "generations": [{ "code": "Type 131", "years": "2022–presente" }],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "Emira V6 First Edition (2022)",
+    "specs": {
+      "engine": { "type": "V6 Toyota sobrealimentado, motor central (también 4 cil. AMG 2.0 turbo)", "displacement": "3456 cc", "cylinders": 6, "configuration": "V", "aspiration": "sobrealimentado (compresor)", "powerCv": 405, "torqueNm": 420 },
+      "transmission": { "gearbox": "Manual 6 (o automática 6; DCT 8 en el 4 cilindros)", "gears": 6 },
+      "drivetrain": "trasera (motor central)",
+      "suspension": { "front": "Doble trapecio", "rear": "Doble trapecio" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 4.3, "topSpeed": 290, "consumption": null },
+      "dimensions": { "length": 4412, "width": 1895, "height": 1225, "wheelbase": 2575, "weight": 1458 }
+    },
+    "trivia": "El último Lotus con motor de combustión: cierra la era iniciada por el Seven antes de la transición total a eléctricos."
+  },
+  {
+    "id": "lotus-eletre",
+    "brandId": "lotus",
+    "name": "Eletre",
+    "years": "2023–presente",
+    "generations": [{ "code": "Type 132", "years": "2023–presente" }],
+    "category": "SUV eléctrico",
+    "images": [],
+    "specsVersion": "Eletre (base, 2023)",
+    "specs": {
+      "engine": { "type": "100% eléctrico, 2 motores, arquitectura 800 V", "displacement": null, "cylinders": null, "configuration": "un motor por eje", "aspiration": "eléctrico", "powerCv": 612, "torqueNm": 710 },
+      "transmission": { "gearbox": "Reducción directa", "gears": 1 },
+      "drivetrain": "integral (AWD)",
+      "suspension": { "front": "Neumática multibrazo", "rear": "Neumática multibrazo" },
+      "brakes": "Discos ventilados (carbocerámicos opcionales)",
+      "performance": { "zeroTo100": 4.5, "topSpeed": 258, "consumption": "Batería de 112 kWh" },
+      "dimensions": { "length": 5103, "width": 2019, "height": 1630, "wheelbase": 3019, "weight": 2490 }
+    },
+    "trivia": "El primer SUV de Lotus, fabricado en Wuhan (China) bajo el paraguas de Geely. La versión R declara 918 CV, algo impensado para la marca del \"lightness\"."
+  },
+  {
+    "id": "lotus-emeya",
+    "brandId": "lotus",
+    "name": "Emeya",
+    "years": "2024–presente",
+    "generations": [{ "code": "Type 133", "years": "2024–presente" }],
+    "category": "sedán eléctrico",
+    "images": [],
+    "specsVersion": "Emeya (base, 2024)",
+    "specs": {
+      "engine": { "type": "100% eléctrico, 2 motores, arquitectura 800 V", "displacement": null, "cylinders": null, "configuration": "un motor por eje", "aspiration": "eléctrico", "powerCv": 612, "torqueNm": 710 },
+      "transmission": { "gearbox": "Reducción directa", "gears": 1 },
+      "drivetrain": "integral (AWD)",
+      "suspension": { "front": "Neumática multibrazo", "rear": "Neumática multibrazo" },
+      "brakes": "Discos ventilados (carbocerámicos opcionales)",
+      "performance": { "zeroTo100": 4.2, "topSpeed": 250, "consumption": "Batería de 102 kWh" },
+      "dimensions": { "length": 5139, "width": 2005, "height": 1464, "wheelbase": 3069, "weight": 2565 }
+    },
+    "trivia": "El gran turismo eléctrico de 4 puertas de Lotus; la versión R comparte los ~918 CV del Eletre R y baja de 3 segundos en el 0-100."
+  },
+  {
+    "id": "saab-92",
+    "brandId": "saab",
+    "name": "92",
+    "years": "1949–1956",
+    "generations": [{ "code": "92 / 92B", "years": "1949–1956" }],
+    "category": "sedán",
+    "images": [],
+    "specsVersion": "92 (1950)",
+    "specs": {
+      "engine": { "type": "2 cilindros 2 tiempos, transversal", "displacement": "764 cc", "cylinders": 2, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 25, "torqueNm": null },
+      "transmission": { "gearbox": "Manual (3 marchas, rueda libre)", "gears": 3 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "Barras de torsión", "rear": "Barras de torsión" },
+      "brakes": "Tambores",
+      "performance": { "zeroTo100": null, "topSpeed": 105, "consumption": null },
+      "dimensions": { "length": 3946, "width": 1620, "height": 1475, "wheelbase": 2470, "weight": 765 }
+    },
+    "trivia": "El primer auto de Saab, diseñado por ingenieros aeronáuticos: su carrocería monocasco tenía un Cd de ~0,30, extraordinario para 1949. Casi todos se pintaron de verde con excedentes de pintura de aviones."
+  },
+  {
+    "id": "saab-93",
+    "brandId": "saab",
+    "name": "93",
+    "years": "1955–1960",
+    "generations": [{ "code": "93 / 93B / 93F", "years": "1955–1960" }],
+    "category": "sedán",
+    "images": [],
+    "specsVersion": "93 (1956)",
+    "specs": {
+      "engine": { "type": "3 cilindros 2 tiempos, longitudinal", "displacement": "748 cc", "cylinders": 3, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 33, "torqueNm": null },
+      "transmission": { "gearbox": "Manual con rueda libre", "gears": 3 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "Muelles helicoidales", "rear": "Eje en U con muelles helicoidales" },
+      "brakes": "Tambores",
+      "performance": { "zeroTo100": null, "topSpeed": 120, "consumption": null },
+      "dimensions": { "length": 4010, "width": 1570, "height": 1470, "wheelbase": 2480, "weight": 810 }
+    },
+    "trivia": "Introdujo el motor de 3 cilindros de dos tiempos que definió el sonido Saab de los 50, y fue el primer Saab exportado en serie a Estados Unidos."
+  },
+  {
+    "id": "saab-sonett",
+    "brandId": "saab",
+    "name": "Sonett",
+    "years": "1955–1974",
+    "generations": [
+      { "code": "Sonett I (6 unidades)", "years": "1955–1957" },
+      { "code": "Sonett II / V4", "years": "1966–1969" },
+      { "code": "Sonett III", "years": "1970–1974" }
+    ],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "Sonett III (1971)",
+    "specs": {
+      "engine": { "type": "V4 Ford Taunus", "displacement": "1699 cc", "cylinders": 4, "configuration": "V", "aspiration": "atmosférico", "powerCv": 65, "torqueNm": null },
+      "transmission": { "gearbox": "Manual con rueda libre", "gears": 4 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "Doble trapecio", "rear": "Eje en U" },
+      "brakes": "Discos delanteros, tambores traseros",
+      "performance": { "zeroTo100": null, "topSpeed": 165, "consumption": null },
+      "dimensions": { "length": 3980, "width": 1500, "height": 1180, "wheelbase": 2159, "weight": 880 }
+    },
+    "trivia": "Deportivo de fibra de vidrio y tracción delantera pensado sobre todo para el mercado estadounidense. El Sonett I original fue casi un prototipo: solo 6 unidades."
+  },
+  {
+    "id": "saab-95",
+    "brandId": "saab",
+    "name": "95",
+    "years": "1959–1978",
+    "generations": [{ "code": "95 (2 tiempos, luego V4)", "years": "1959–1978" }],
+    "category": "familiar",
+    "images": [],
+    "specsVersion": "95 V4 (1967)",
+    "specs": {
+      "engine": { "type": "V4 Ford Taunus", "displacement": "1498 cc", "cylinders": 4, "configuration": "V", "aspiration": "atmosférico", "powerCv": 65, "torqueNm": null },
+      "transmission": { "gearbox": "Manual con rueda libre", "gears": 4 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "Muelles helicoidales", "rear": "Eje en U" },
+      "brakes": "Discos delanteros (en versiones tardías), tambores",
+      "performance": { "zeroTo100": null, "topSpeed": 135, "consumption": null },
+      "dimensions": { "length": 4270, "width": 1590, "height": 1480, "wheelbase": 2489, "weight": 900 }
+    },
+    "trivia": "La rural de 7 plazas de Saab: la tercera fila miraba hacia atrás. Empezó con motor de dos tiempos y terminó con el V4 de Ford."
+  },
+  {
+    "id": "saab-96",
+    "brandId": "saab",
+    "name": "96",
+    "years": "1960–1980",
+    "generations": [
+      { "code": "96 dos tiempos", "years": "1960–1968" },
+      { "code": "96 V4", "years": "1967–1980" }
+    ],
+    "category": "sedán",
+    "images": [],
+    "specsVersion": "96 V4 (1970)",
+    "specs": {
+      "engine": { "type": "V4 Ford Taunus", "displacement": "1498 cc", "cylinders": 4, "configuration": "V", "aspiration": "atmosférico", "powerCv": 65, "torqueNm": null },
+      "transmission": { "gearbox": "Manual con rueda libre", "gears": 4 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "Muelles helicoidales", "rear": "Eje en U" },
+      "brakes": "Discos delanteros, tambores traseros",
+      "performance": { "zeroTo100": null, "topSpeed": 145, "consumption": null },
+      "dimensions": { "length": 4170, "width": 1590, "height": 1470, "wheelbase": 2498, "weight": 920 }
+    },
+    "trivia": "Erik Carlsson ganó el Rally de Montecarlo en 1962 y 1963 con un 96, poniendo a Saab en el mapa mundial. Se fabricó durante 20 años."
+  },
+  {
+    "id": "saab-99",
+    "brandId": "saab",
+    "name": "99",
+    "years": "1968–1984",
+    "generations": [
+      { "code": "99", "years": "1968–1984" },
+      { "code": "99 Turbo", "years": "1978–1980" }
+    ],
+    "category": "sedán",
+    "images": [],
+    "specsVersion": "99 Turbo (1978)",
+    "specs": {
+      "engine": { "type": "4 en línea turbo (base Triumph, desarrollado por Saab)", "displacement": "1985 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "turbo", "powerCv": 145, "torqueNm": 235 },
+      "transmission": { "gearbox": "Manual", "gears": 4 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "Doble trapecio", "rear": "Eje rígido con muelles helicoidales" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": 8.9, "topSpeed": 200, "consumption": null },
+      "dimensions": { "length": 4355, "width": 1690, "height": 1440, "wheelbase": 2473, "weight": 1180 }
+    },
+    "trivia": "El 99 Turbo de 1978 popularizó el turbo en autos de gran serie: turbo con válvula wastegate para uso diario, no solo para picos de potencia. Ícono absoluto de Saab."
+  },
+  {
+    "id": "saab-90",
+    "brandId": "saab",
+    "name": "90",
+    "years": "1984–1987",
+    "generations": [{ "code": "90", "years": "1984–1987" }],
+    "category": "sedán",
+    "images": [],
+    "specsVersion": "90 (1985)",
+    "specs": {
+      "engine": { "type": "4 en línea", "displacement": "1985 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 100, "torqueNm": null },
+      "transmission": { "gearbox": "Manual", "gears": 4 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "Doble trapecio", "rear": "Eje rígido" },
+      "brakes": "Discos delanteros, tambores traseros",
+      "performance": { "zeroTo100": null, "topSpeed": 165, "consumption": null },
+      "dimensions": { "length": 4442, "width": 1690, "height": 1440, "wheelbase": 2473, "weight": 1085 }
+    },
+    "trivia": "Un híbrido literal: la parte delantera del 99 con la trasera del 900, fabricado en Finlandia por Valmet como modelo de entrada.",
+    "dataNotes": "Modelo poco documentado; varias cifras exactas (torque, prestaciones) no están confirmadas."
+  },
+  {
+    "id": "saab-900",
+    "brandId": "saab",
+    "name": "900",
+    "years": "1978–1998",
+    "generations": [
+      { "code": "900 \"clásico\"", "years": "1978–1993" },
+      { "code": "900 NG (plataforma GM)", "years": "1994–1998" }
+    ],
+    "category": "sedán / hatchback",
+    "images": [],
+    "specsVersion": "900 Turbo 16 (1984)",
+    "specs": {
+      "engine": { "type": "4 en línea turbo, 16 válvulas, montado longitudinal invertido", "displacement": "1985 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "turbo", "powerCv": 175, "torqueNm": 273 },
+      "transmission": { "gearbox": "Manual", "gears": 5 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "Doble trapecio", "rear": "Eje rígido con muelles helicoidales" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": 8.5, "topSpeed": 210, "consumption": null },
+      "dimensions": { "length": 4680, "width": 1690, "height": 1420, "wheelbase": 2517, "weight": 1285 }
+    },
+    "trivia": "Parabrisas curvo tipo avión, ignición entre los asientos y motor inclinado 45°. El 900 clásico es EL Saab por excelencia; el cabrio se fabricó hasta 1994."
+  },
+  {
+    "id": "saab-9000",
+    "brandId": "saab",
+    "name": "9000",
+    "years": "1984–1998",
+    "generations": [
+      { "code": "9000 (hatch CC)", "years": "1984–1991" },
+      { "code": "9000 CS / CD", "years": "1991–1998" }
+    ],
+    "category": "sedán",
+    "images": [],
+    "specsVersion": "9000 Aero 2.3 Turbo (1993)",
+    "specs": {
+      "engine": { "type": "4 en línea turbo, 16 válvulas", "displacement": "2290 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "turbo", "powerCv": 225, "torqueNm": 342 },
+      "transmission": { "gearbox": "Manual", "gears": 5 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "McPherson", "rear": "Eje semirrígido" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 6.9, "topSpeed": 240, "consumption": null },
+      "dimensions": { "length": 4761, "width": 1778, "height": 1420, "wheelbase": 2672, "weight": 1425 }
+    },
+    "trivia": "Compartió la plataforma \"Type Four\" con Fiat Croma, Lancia Thema y Alfa 164. El Aero era de los tracción delantera más rápidos de su época en recuperaciones."
+  },
+  {
+    "id": "saab-9-5",
+    "brandId": "saab",
+    "name": "9-5",
+    "years": "1997–2011",
+    "generations": [
+      { "code": "9-5 I (sedán y SportCombi)", "years": "1997–2010" },
+      { "code": "9-5 II (truncado por la quiebra)", "years": "2010–2011" }
+    ],
+    "category": "sedán",
+    "images": [],
+    "specsVersion": "9-5 Aero 2.3T (2000)",
+    "specs": {
+      "engine": { "type": "4 en línea turbo", "displacement": "2290 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "turbo", "powerCv": 230, "torqueNm": 350 },
+      "transmission": { "gearbox": "Manual 5 o automática 4", "gears": 5 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "McPherson", "rear": "Multibrazo" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 6.9, "topSpeed": 240, "consumption": null },
+      "dimensions": { "length": 4805, "width": 1792, "height": 1449, "wheelbase": 2703, "weight": 1470 }
+    },
+    "trivia": "Ofrecía asientos ventilados y el famoso \"Night Panel\" que apagaba todo el tablero salvo el velocímetro. La segunda generación duró apenas un año por la quiebra de Saab."
+  },
+  {
+    "id": "saab-9-3",
+    "brandId": "saab",
+    "name": "9-3",
+    "years": "1998–2014",
+    "generations": [
+      { "code": "9-3 I (base 900 NG)", "years": "1998–2002" },
+      { "code": "9-3 II (sedán/SportCombi/cabrio)", "years": "2002–2011" },
+      { "code": "9-3 NEVS (producción breve)", "years": "2013–2014" }
+    ],
+    "category": "sedán",
+    "images": [],
+    "specsVersion": "9-3 Aero 2.0T (2003)",
+    "specs": {
+      "engine": { "type": "4 en línea turbo", "displacement": "1998 cc", "cylinders": 4, "configuration": "en línea", "aspiration": "turbo", "powerCv": 210, "torqueNm": 300 },
+      "transmission": { "gearbox": "Manual 6 o automática 5", "gears": 6 },
+      "drivetrain": "delantera",
+      "suspension": { "front": "McPherson", "rear": "Multibrazo" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 7.5, "topSpeed": 235, "consumption": null },
+      "dimensions": { "length": 4635, "width": 1762, "height": 1466, "wheelbase": 2675, "weight": 1470 }
+    },
+    "trivia": "Fue el último modelo de Saab: NEVS, la empresa que compró los restos de la marca, lo volvió a producir brevemente en 2013-2014 antes de perder los derechos del nombre Saab."
+  },
+  {
+    "id": "saab-9-2x",
+    "brandId": "saab",
+    "name": "9-2X",
+    "years": "2004–2006",
+    "generations": [{ "code": "9-2X (solo Norteamérica)", "years": "2004–2006" }],
+    "category": "hatchback",
+    "images": [],
+    "specsVersion": "9-2X Aero (2005)",
+    "specs": {
+      "engine": { "type": "Bóxer 4 turbo (Subaru EJ20)", "displacement": "1994 cc", "cylinders": 4, "configuration": "bóxer", "aspiration": "turbo", "powerCv": 230, "torqueNm": 320 },
+      "transmission": { "gearbox": "Manual 5 o automática 4", "gears": 5 },
+      "drivetrain": "integral (AWD)",
+      "suspension": { "front": "McPherson", "rear": "McPherson" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": 6.5, "topSpeed": null, "consumption": null },
+      "dimensions": { "length": 4443, "width": 1730, "height": 1440, "wheelbase": 2525, "weight": 1405 }
+    },
+    "trivia": "Apodado \"Saabaru\": un Subaru Impreza WRX con frente y tapizados Saab, creado en la era GM para el mercado norteamericano.",
+    "dataNotes": "Cifras aproximadas de la versión Aero (WRX); la velocidad máxima homologada no está confirmada."
+  },
+  {
+    "id": "saab-9-7x",
+    "brandId": "saab",
+    "name": "9-7X",
+    "years": "2005–2009",
+    "generations": [{ "code": "9-7X (solo Norteamérica)", "years": "2005–2009" }],
+    "category": "SUV",
+    "images": [],
+    "specsVersion": "9-7X 4.2i (2005)",
+    "specs": {
+      "engine": { "type": "6 en línea GM Vortec (también V8 5.3 y 6.0 \"Aero\")", "displacement": "4157 cc", "cylinders": 6, "configuration": "en línea", "aspiration": "atmosférico", "powerCv": 279, "torqueNm": 373 },
+      "transmission": { "gearbox": "Automática", "gears": 4 },
+      "drivetrain": "integral (AWD)",
+      "suspension": { "front": "Doble trapecio", "rear": "Eje rígido con suspensión neumática" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": null, "topSpeed": null, "consumption": null },
+      "dimensions": { "length": 4907, "width": 1897, "height": 1740, "wheelbase": 2870, "weight": 2170 }
+    },
+    "trivia": "Un Chevrolet TrailBlazer con llave en la consola central: el Saab más \"americano\" de la era GM, fabricado en Ohio. Los puristas nunca lo perdonaron."
+  },
+  {
+    "id": "saab-9-4x",
+    "brandId": "saab",
+    "name": "9-4X",
+    "years": "2011–2012",
+    "generations": [{ "code": "9-4X (~800 unidades)", "years": "2011–2012" }],
+    "category": "SUV",
+    "images": [],
+    "specsVersion": "9-4X 3.0i (2011)",
+    "specs": {
+      "engine": { "type": "V6 GM (también 2.8 turbo en el Aero)", "displacement": "2997 cc", "cylinders": 6, "configuration": "V", "aspiration": "atmosférico", "powerCv": 265, "torqueNm": 302 },
+      "transmission": { "gearbox": "Automática", "gears": 6 },
+      "drivetrain": "integral (AWD)",
+      "suspension": { "front": "McPherson", "rear": "Multibrazo" },
+      "brakes": "Discos ventilados en las 4 ruedas",
+      "performance": { "zeroTo100": null, "topSpeed": null, "consumption": null },
+      "dimensions": { "length": 4826, "width": 1913, "height": 1680, "wheelbase": 2807, "weight": 2005 }
+    },
+    "trivia": "El último modelo nuevo de la historia de Saab: se fabricaron menos de mil unidades en México antes de que la marca quebrara. Hoy es una pieza de coleccionista involuntaria."
+  },
+  {
+    "id": "delorean-dmc12",
+    "brandId": "delorean",
+    "name": "DMC-12",
+    "years": "1981–1983",
+    "generations": [{ "code": "DMC-12 (~9.000 unidades)", "years": "1981–1983" }],
+    "category": "deportivo",
+    "images": [],
+    "specsVersion": "DMC-12 (1981, spec EE.UU.)",
+    "specs": {
+      "engine": { "type": "V6 PRV (Peugeot-Renault-Volvo), montado atrás", "displacement": "2849 cc", "cylinders": 6, "configuration": "V", "aspiration": "atmosférico", "powerCv": 132, "torqueNm": 208 },
+      "transmission": { "gearbox": "Manual 5 o automática 3", "gears": 5 },
+      "drivetrain": "trasera (motor trasero)",
+      "suspension": { "front": "Doble trapecio", "rear": "Multibrazo" },
+      "brakes": "Discos en las 4 ruedas",
+      "performance": { "zeroTo100": 10.5, "topSpeed": 177, "consumption": null },
+      "dimensions": { "length": 4267, "width": 1988, "height": 1140, "wheelbase": 2413, "weight": 1233 }
+    },
+    "trivia": "Carrocería de acero inoxidable sin pintar, puertas de ala de gaviota y chasis con aportes de Lotus (Colin Chapman participó en la ingeniería). \"Volver al Futuro\" lo hizo inmortal: la máquina del tiempo necesitaba 88 millas por hora, más de lo que al DMC-12 le sobraba."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "porsche",
+    "name": "Porsche",
+    "country": "Alemania",
+    "founded": 1931,
+    "defunct": null,
+    "category": "actual",
+    "logo": "",
+    "description": "Fundada como oficina de ingeniería por Ferdinand Porsche en 1931; su primer auto propio de producción fue el 356 en 1948. Sinónimo de deportivos con motor bóxer y del 911, hoy también fabrica SUVs, sedanes y eléctricos."
+  },
+  {
+    "id": "lotus",
+    "name": "Lotus",
+    "country": "Reino Unido",
+    "founded": 1952,
+    "defunct": null,
+    "category": "actual",
+    "logo": "",
+    "description": "Fundada por Colin Chapman bajo la filosofía \"simplify, then add lightness\". Deportivos livianos de chasis brillante y una historia enorme en Fórmula 1. Hoy pertenece a Geely y suma eléctricos de alto rendimiento."
+  },
+  {
+    "id": "saab",
+    "name": "Saab",
+    "country": "Suecia",
+    "founded": 1945,
+    "defunct": 2011,
+    "category": "clasica",
+    "logo": "",
+    "description": "Nacida de la aeronáutica (Svenska Aeroplan AB), hizo autos aerodinámicos, seguros y excéntricos: pionera del turbo de gran serie y de la llave en la consola central. Quebró en 2011; NEVS produjo brevemente el 9-3 hasta 2014."
+  },
+  {
+    "id": "delorean",
+    "name": "DeLorean",
+    "country": "Estados Unidos",
+    "founded": 1975,
+    "defunct": 1982,
+    "category": "clasica",
+    "logo": "",
+    "description": "La DeLorean Motor Company de John Z. DeLorean fabricó un único modelo en Dunmurry, Irlanda del Norte: el DMC-12 de carrocería de acero inoxidable y puertas de ala de gaviota, inmortalizado por Volver al Futuro."
+  }
+]

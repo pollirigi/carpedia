@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carpedia — Enciclopedia visual de autos</title>
+  <meta name="description" content="Catálogo visual de marcas y modelos de auto: fichas técnicas, guardados y comparador.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="logo">🏁 <span>Carpedia</span></a>
+    <nav class="nav">
+      <a href="#/" data-nav="home">Marcas</a>
+      <a href="#/comparar" data-nav="comparar">Comparador</a>
+      <a href="#/guardados" data-nav="guardados">❤️ Guardados <span id="saved-count" class="badge" hidden></span></a>
+    </nav>
+  </header>
+
+  <main id="app" class="app">
+    <div class="loading">Cargando catálogo…</div>
+  </main>
+
+  <footer class="footer">
+    <p>Carpedia — catálogo estático servido desde GitHub Pages. Tus guardados se almacenan solo en este dispositivo/navegador.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
