@@ -91,10 +91,12 @@ Reglas de datos:
 |---|---|---|
 | Porsche | actual | 18 (lineup completo de calle: 356, 550, 911, 912, 914, 924, 928, 944, 959, 968, Boxster, Cayman, Carrera GT, Cayenne, Macan, Panamera, 918 Spyder, Taycan) |
 | Lotus | actual | 18 (del Seven al Emeya, incl. Elite ×2, Elan, Elan +2, Europa, Eclat, Esprit, Excel, Elan M100, Elise, Exige, Europa S, Evora, Evija, Emira, Eletre) |
+| Alfa Romeo | actual | 40 (de la RL de 1922 al Junior 2024: 6C, 8C, 1900, Giulietta ×3, Giulia clásica y moderna, coupés 105, Spider, Montreal, Alfasud, Alfetta, GTV6, 33, Arna, 75, 164, SZ, 155, 156, 147, 159, Brera, 8C Competizione, 4C, Stelvio, Tonale…) |
+| Ferrari | actual | 45 (del 166 Inter de 1948 al F80: familia 250, 275, Daytona, Dinos, Berlinetta Boxer, 308→F8, Testarossa, F40, F50, Enzo, LaFerrari, SF90, 296, Purosangue, 12Cilindri…) |
 | Saab | clásica | 14 (92, 93, Sonett, 95, 96, 99, 90, 900, 9000, 9-5, 9-3, 9-2X, 9-7X, 9-4X) |
 | DeLorean | clásica | 1 (DMC-12) |
 
-Criterio: modelos de producción con nameplate propio (no cada trim ni variantes regionales; los derivados exclusivos de circuito, como el Lotus 2-Eleven, quedan fuera). Próximas marcas sugeridas para llegar a 20-25: Ferrari, Lamborghini, Alfa Romeo, Jaguar, Studebaker, Tucker, Packard, DeSoto, Lancia, Mazda…
+Criterio: modelos de producción con nameplate propio (no cada trim ni variantes regionales; los derivados exclusivos de circuito, como el Lotus 2-Eleven, quedan fuera). Series ultralimitadas y one-offs también quedan fuera: Ferrari Icona (Monza SP1/SP2, Daytona SP3) y programas Speciale/one-off; Alfa 33 Stradale (1967 y 2023) y Disco Volante. Los Alfa anteriores a 1922 (24 HP, RM…) eran chasis carrozados artesanalmente y quedan pendientes. Próximas marcas sugeridas para llegar a 20-25: Lamborghini, Jaguar, Studebaker, Tucker, Packard, DeSoto, Lancia, Mazda…
 
 ## Guardados
 
