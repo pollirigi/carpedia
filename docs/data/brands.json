@@ -6,7 +6,7 @@
     "founded": 1931,
     "defunct": null,
     "category": "actual",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Porsche_wordmark.svg/500px-Porsche_wordmark.svg.png",
     "description": "Fundada como oficina de ingeniería por Ferdinand Porsche en 1931; su primer auto propio de producción fue el 356 en 1948. Sinónimo de deportivos con motor bóxer y del 911, hoy también fabrica SUVs, sedanes y eléctricos."
   },
   {
@@ -16,7 +16,7 @@
     "founded": 1952,
     "defunct": null,
     "category": "actual",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Lotus_Cars_logo.svg/500px-Lotus_Cars_logo.svg.png",
     "description": "Fundada por Colin Chapman bajo la filosofía \"simplify, then add lightness\". Deportivos livianos de chasis brillante y una historia enorme en Fórmula 1. Hoy pertenece a Geely y suma eléctricos de alto rendimiento."
   },
   {
@@ -26,7 +26,7 @@
     "founded": 1910,
     "defunct": null,
     "category": "actual",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/1933_Alfa_Romeo_badge.jpg/500px-1933_Alfa_Romeo_badge.jpg",
     "description": "Fundada en Milán en 1910 (A.L.F.A.), mezcla como nadie deporte y pasión: dominó las carreras de preguerra, creó el mito del cuadrifoglio y del V6 Busso, y hoy vive una nueva etapa dentro de Stellantis con la Giulia, el Stelvio y el Junior."
   },
   {
@@ -36,7 +36,7 @@
     "founded": 1947,
     "defunct": null,
     "category": "actual",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Ferrari_wordmark.svg/500px-Ferrari_wordmark.svg.png",
     "description": "Enzo Ferrari fundó la Scuderia en 1929 y fabricó su primer auto de calle en 1947, casi a regañadientes, para financiar las carreras. Del V12 Colombo al híbrido de 1.200 CV, el cavallino rampante es la marca deportiva más mítica del mundo."
   },
   {
@@ -46,7 +46,7 @@
     "founded": 1916,
     "defunct": null,
     "category": "actual",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Logo_BMW_Group_2021.svg/500px-Logo_BMW_Group_2021.svg.png",
     "description": "Nació haciendo motores de avión (de ahí la hélice estilizada de su logo) y pasó por motos y microcoches antes de definir el sedán deportivo moderno con la Neue Klasse. \"El placer de conducir\" sigue siendo su religión."
   },
   {
@@ -56,7 +56,7 @@
     "founded": 1926,
     "defunct": null,
     "category": "actual",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mercedes-Benz_Logo_2010.svg/500px-Mercedes-Benz_Logo_2010.svg.png",
     "description": "Heredera directa del Benz Patent-Motorwagen de 1886 —el primer automóvil de la historia—, la marca de la estrella inventó buena parte de la seguridad y el lujo modernos: zonas de deformación, ABS, airbag y la eterna Clase S."
   },
   {
@@ -66,7 +66,7 @@
     "founded": 1937,
     "defunct": null,
     "category": "actual",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Toyota_logo.svg/500px-Toyota_logo.svg.png",
     "description": "De los telares Toyoda al mayor fabricante de autos del mundo: sinónimo de confiabilidad, inventor del híbrido de masas con el Prius y dueño de leyendas como el Land Cruiser, el Corolla y el Supra."
   },
   {
@@ -76,7 +76,7 @@
     "founded": 1937,
     "defunct": null,
     "category": "actual",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Volkswagen_logo_2019.svg/500px-Volkswagen_logo_2019.svg.png",
     "description": "El \"auto del pueblo\" cumplió su nombre dos veces: con el Escarabajo, el auto más fabricado sobre una plataforma, y con el Golf, el compacto que definió la categoría. Hoy encabeza uno de los mayores grupos automotrices del mundo."
   },
   {
@@ -86,7 +86,7 @@
     "founded": 1911,
     "defunct": null,
     "category": "actual",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Logo_Chevrolet.svg/500px-Logo_Chevrolet.svg.png",
     "description": "Fundada por el piloto suizo Louis Chevrolet y el fundador de GM William Durant. La corbatita dorada vistió al Corvette, al Impala, al small-block V8 y a las pickups que mueven América — del Norte y del Sur."
   },
   {
@@ -96,7 +96,7 @@
     "founded": 1945,
     "defunct": 2011,
     "category": "clasica",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Saab_wordmark_blue.svg/500px-Saab_wordmark_blue.svg.png",
     "description": "Nacida de la aeronáutica (Svenska Aeroplan AB), hizo autos aerodinámicos, seguros y excéntricos: pionera del turbo de gran serie y de la llave en la consola central. Quebró en 2011; NEVS produjo brevemente el 9-3 hasta 2014."
   },
   {
@@ -106,7 +106,7 @@
     "founded": 1975,
     "defunct": 1982,
     "category": "clasica",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/DeLorean_Motor_Company_logo.svg/500px-DeLorean_Motor_Company_logo.svg.png",
     "description": "La DeLorean Motor Company de John Z. DeLorean fabricó un único modelo en Dunmurry, Irlanda del Norte: el DMC-12 de carrocería de acero inoxidable y puertas de ala de gaviota, inmortalizado por Volver al Futuro."
   }
 ]

@@ -145,6 +145,10 @@ a { color: inherit; text-decoration: none; }
 }
 .brand-logo img { width: 100%; height: 100%; object-fit: contain; }
 
+/* Logo real: fondo claro para que los logos oscuros/transparentes se lean */
+.brand-logo.has-logo { background: #f4f5f8; padding: 9px; }
+.brand-logo.has-logo img { border-radius: 4px; }
+
 .brand-card h3 { font-size: 1.02rem; }
 .brand-card p { font-size: 0.82rem; color: var(--text-dim); }
 
@@ -266,9 +270,103 @@ a { color: inherit; text-decoration: none; }
 .back-link { display: inline-block; margin-bottom: 1rem; color: var(--text-dim); font-size: 0.9rem; }
 .back-link:hover { color: var(--text); }
 
+/* ---- Stats del home ---- */
+
+.stats { color: var(--text-dim); font-size: 0.9rem; margin: -0.8rem 0 1.2rem; }
+
+/* ---- Chips de filtro por categoría ---- */
+
+.chip-row { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 0.4rem; }
+
+.filter-chip {
+  padding: 0.32rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text-dim);
+  font-size: 0.84rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.filter-chip:hover { border-color: var(--accent); color: var(--text); }
+.filter-chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.count-badge {
+  font-size: 0.72em;
+  padding: 0.1em 0.6em;
+  border-radius: 999px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}
+
 /* ---- Detalle de modelo ---- */
 
 .detail { animation: fadeUp 0.35s ease both; }
+
+.detail-head { margin-bottom: 1rem; }
+.detail-head h1 { font-size: 1.9rem; }
+.detail-meta { color: var(--text-dim); }
+
+/* ---- Galería con scroll horizontal (imagen completa, sin recorte) ---- */
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  border-radius: var(--radius);
+  background: #0a0b0e;
+  border: 1px solid var(--border);
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(260px, 55vh, 560px);
+  padding: 0.6rem;
+}
+
+.gallery-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.gallery-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.6rem 0 0.2rem;
+}
+
+.gallery-dots .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: background 0.2s, transform 0.2s;
+}
+.gallery-dots .dot.active { background: var(--accent); transform: scale(1.25); }
+
+.gallery-hint { margin-left: 0.6rem; font-size: 0.78rem; color: var(--text-dim); }
+
+/* ---- Tabla de versiones ---- */
+
+.versions-wrap { overflow-x: auto; }
+.versions-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.versions-table td { padding: 0.42rem 0.6rem; border-bottom: 1px dashed var(--border); }
+.versions-table tr:last-child td { border-bottom: none; }
+.versions-table .vn { font-weight: 700; white-space: nowrap; }
+.versions-table .vp { color: var(--accent); font-weight: 700; white-space: nowrap; text-align: right; }
+.versions-table .vd { color: var(--text-dim); }
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(14px); }
@@ -352,6 +450,7 @@ a { color: inherit; text-decoration: none; }
 .compare-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); }
 
 .compare-table th, .compare-table td { padding: 0.7rem 0.9rem; text-align: center; border-bottom: 1px solid var(--border); font-size: 0.92rem; }
+.cmp-thumb { display: block; width: 100%; max-width: 200px; margin: 0 auto 0.5rem; border-radius: 8px; }
 .compare-table tr:last-child th, .compare-table tr:last-child td { border-bottom: none; }
 .compare-table thead th { background: var(--bg-elevated); font-size: 1rem; }
 .compare-table td.metric { color: var(--text-dim); font-size: 0.85rem; white-space: nowrap; }

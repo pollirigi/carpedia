@@ -71,10 +71,21 @@
   // ---------- Componentes ----------
 
   const brandLogoHtml = (brand, cls = "brand-logo") => {
-    if (brand.logo) return `<div class="${cls}"><img src="${esc(brand.logo)}" alt="Logo ${esc(brand.name)}"></div>`;
     const initials = brand.name.slice(0, 2).toUpperCase();
+    if (brand.logo) {
+      return `<div class="${cls} has-logo" data-ph-style="${placeholderStyle(brand.id)}" data-ph-name="${esc(initials)}">
+        <img src="${esc(brand.logo)}" alt="Logo ${esc(brand.name)}" loading="lazy"></div>`;
+    }
     return `<div class="${cls}" style="${placeholderStyle(brand.id)}">${esc(initials)}</div>`;
   };
+
+  // Año de debut de un modelo (primer número de 4 cifras de "years").
+  const debutYear = (m) => {
+    const match = String(m.years).match(/\d{4}/);
+    return match ? parseInt(match[0], 10) : 9999;
+  };
+
+  const inProduction = (m) => /presente/i.test(m.years);
 
   const saveButtonHtml = (modelId, inline = false) => {
     const saved = isSaved(modelId);
@@ -92,7 +103,7 @@
       ? `<div class="model-img has-photo" data-ph-name="${esc(model.name)}" data-ph-style="${placeholderStyle(model.id)}"><img src="${esc(img)}" alt="${esc(model.name)}" loading="lazy"></div>`
       : `<div class="model-img ${placeholderSize(model.id)}" style="${placeholderStyle(model.id)}">${esc(model.name)}</div>`;
     return `
-      <article class="model-card">
+      <article class="model-card" data-category="${esc(model.category)}">
         ${saveButtonHtml(model.id)}
         <a href="#/modelo/${esc(model.id)}">
           ${media}
@@ -130,9 +141,13 @@
         )
         .join("");
 
+    const totalPhotos = models.reduce((n, m) => n + (m.images ? m.images.length : 0), 0);
+    const totalCurrent = models.filter(inProduction).length;
+
     app.innerHTML = `
       <h1 class="page-title">Explorá marcas y modelos</h1>
       <p class="page-subtitle">Catálogo curado con el lineup histórico completo de cada marca cargada. Se agregan marcas nuevas ampliando los JSON de datos, sin tocar código.</p>
+      <p class="stats">🏷️ ${brands.length} marcas · 🚗 ${models.length} modelos · 📸 ${totalPhotos} fotos · 🟢 ${totalCurrent} en producción</p>
       <input type="search" class="search" id="brand-search" placeholder="Buscar marca… (ej. Porsche)" autocomplete="off">
       <div id="brand-sections">
         <h2 class="section-title">Autos actuales</h2>
@@ -155,6 +170,17 @@
     if (!brand) return viewNotFound(`No existe la marca "${brandId}" en el catálogo.`);
     const list = modelsOfBrand(brandId);
 
+    // Actuales primero (los más nuevos arriba); clásicos en orden cronológico.
+    const current = list.filter(inProduction).sort((a, b) => debutYear(b) - debutYear(a));
+    const classic = list.filter((m) => !inProduction(m)).sort((a, b) => debutYear(a) - debutYear(b));
+    const cats = [...new Set(list.map((m) => m.category))].sort();
+
+    const section = (title, items) =>
+      items.length
+        ? `<h2 class="section-title">${title} <span class="count-badge">${items.length}</span></h2>
+           <div class="masonry">${items.map(modelCardHtml).join("")}</div>`
+        : "";
+
     app.innerHTML = `
       <a class="back-link" href="#/">← Todas las marcas</a>
       <header class="brand-header">
@@ -163,11 +189,33 @@
           <h1>${esc(brand.name)}</h1>
           <p class="facts">${esc(brand.country)} · Fundada en ${esc(String(brand.founded))}${
             brand.defunct ? ` · Cesó en ${esc(String(brand.defunct))}` : " · En actividad"
-          } · ${list.length} modelos en el catálogo</p>
+          } · ${list.length} modelos (${current.length} en producción, ${classic.length} históricos)</p>
           <p class="desc">${esc(brand.description)}</p>
         </div>
       </header>
-      <div class="masonry">${list.map(modelCardHtml).join("")}</div>`;
+      ${
+        cats.length > 1
+          ? `<div class="chip-row" id="cat-filter">
+              <button class="filter-chip active" data-cat="">Todos</button>
+              ${cats.map((c) => `<button class="filter-chip" data-cat="${esc(c)}">${esc(c)}</button>`).join("")}
+            </div>`
+          : ""
+      }
+      ${section("🟢 En producción", current)}
+      ${section("🏛️ Clásicos e históricos", classic)}`;
+
+    const filterRow = document.getElementById("cat-filter");
+    if (filterRow) {
+      filterRow.addEventListener("click", (e) => {
+        const btn = e.target.closest(".filter-chip");
+        if (!btn) return;
+        filterRow.querySelectorAll(".filter-chip").forEach((c) => c.classList.toggle("active", c === btn));
+        const cat = btn.dataset.cat;
+        document.querySelectorAll(".model-card").forEach((card) => {
+          card.style.display = !cat || card.dataset.category === cat ? "" : "none";
+        });
+      });
+    }
   };
 
   const viewModel = (modelId) => {
@@ -180,25 +228,50 @@
     const susp = s.suspension || {};
     const perf = s.performance || {};
     const dim = s.dimensions || {};
-    const img = model.images && model.images[0];
+    const imgs = model.images || [];
 
-    const hero = img
-      ? `<div class="detail-hero" data-ph-style="${placeholderStyle(model.id)}"><img src="${esc(img)}" alt="${esc(model.name)}">`
-      : `<div class="detail-hero" style="${placeholderStyle(model.id)}">`;
+    const gallery = imgs.length
+      ? `<div class="gallery" id="gallery">
+          ${imgs
+            .map(
+              (u, i) =>
+                `<a class="gallery-slide" href="${esc(u)}" target="_blank" rel="noopener" title="Abrir la foto completa en pestaña nueva"><img src="${esc(u)}" alt="${esc(model.name)} — foto ${i + 1}"${i ? ' loading="lazy"' : ""}></a>`
+            )
+            .join("")}
+        </div>
+        ${
+          imgs.length > 1
+            ? `<div class="gallery-dots" id="gallery-dots">${imgs.map((_, i) => `<span class="dot ${i === 0 ? "active" : ""}"></span>`).join("")}<span class="gallery-hint">← deslizá para ver más fotos →</span></div>`
+            : ""
+        }`
+      : `<div class="detail-hero" style="${placeholderStyle(model.id)}"><div class="hero-text"><h1>${esc(model.name)}</h1></div></div>`;
 
-    const credit = img && model.imageSource
-      ? `<p class="img-credit">Foto: <a href="${esc(model.imageSource)}" target="_blank" rel="noopener">Wikipedia / Wikimedia Commons</a> (la licencia de cada imagen figura en la página de origen)</p>`
+    const credit = imgs.length && model.imageSource
+      ? `<p class="img-credit">Fotos: <a href="${esc(model.imageSource)}" target="_blank" rel="noopener">Wikipedia / Wikimedia Commons</a> (la licencia de cada imagen figura en su página de origen)</p>`
+      : "";
+
+    const versionsCard = model.versions && model.versions.length
+      ? `<section class="spec-card wide">
+          <h3>🏷️ Versiones y variantes</h3>
+          <div class="versions-wrap"><table class="versions-table"><tbody>
+            ${model.versions
+              .map(
+                (v) =>
+                  `<tr><td class="vn">${esc(v.name)}</td><td class="vp">${v.power ? esc(v.power) : "—"}</td><td class="vd">${v.note ? esc(v.note) : ""}</td></tr>`
+              )
+              .join("")}
+          </tbody></table></div>
+        </section>`
       : "";
 
     app.innerHTML = `
       <div class="detail">
         <a class="back-link" href="#/marca/${esc(model.brandId)}">← ${esc(brand ? brand.name : "Marca")}</a>
-        ${hero}
-          <div class="hero-text">
-            <h1>${esc(brand ? brand.name : "")} ${esc(model.name)}</h1>
-            <p>${esc(model.years)} · ${esc(model.category)}</p>
-          </div>
+        <div class="detail-head">
+          <h1>${esc(brand ? brand.name : "")} ${esc(model.name)}</h1>
+          <p class="detail-meta">${esc(model.years)} · <span class="chip">${esc(model.category)}</span>${imgs.length > 1 ? ` · 📸 ${imgs.length} fotos` : ""}</p>
         </div>
+        ${gallery}
         ${credit}
         <div class="detail-actions">
           ${saveButtonHtml(model.id, true)}
@@ -250,10 +323,25 @@
                 .join("")}
             </ul>
           </section>
+          ${versionsCard}
           ${model.trivia ? `<section class="spec-card wide trivia-card"><h3>💡 Dato curioso</h3><p>${esc(model.trivia)}</p></section>` : ""}
         </div>
         ${model.dataNotes ? `<p class="data-note">Nota sobre los datos: ${esc(model.dataNotes)}</p>` : ""}
       </div>`;
+
+    // Dots de la galería sincronizados con el scroll horizontal.
+    const gal = document.getElementById("gallery");
+    if (gal) {
+      const dots = document.querySelectorAll("#gallery-dots .dot");
+      gal.addEventListener(
+        "scroll",
+        () => {
+          const i = Math.round(gal.scrollLeft / gal.clientWidth);
+          dots.forEach((d, j) => d.classList.toggle("active", j === i));
+        },
+        { passive: true }
+      );
+    }
   };
 
   const viewSaved = () => {
@@ -296,6 +384,8 @@
 
   const compareTableHtml = (a, b) => {
     const nameOf = (m) => `${brandById(m.brandId)?.name ?? ""} ${m.name}`;
+    const thumbOf = (m) =>
+      m.images && m.images[0] ? `<img class="cmp-thumb" src="${esc(m.images[0])}" alt="${esc(m.name)}" loading="lazy">` : "";
     const rows = COMPARE_METRICS.map((metric) => {
       const va = metric.get(a);
       const vb = metric.get(b);
@@ -315,9 +405,9 @@
       <div class="compare-table-wrap">
         <table class="compare-table">
           <thead><tr>
-            <th><a href="#/modelo/${esc(a.id)}">${esc(nameOf(a))}</a></th>
+            <th><a href="#/modelo/${esc(a.id)}">${thumbOf(a)}<span>${esc(nameOf(a))}</span></a></th>
             <th>vs.</th>
-            <th><a href="#/modelo/${esc(b.id)}">${esc(nameOf(b))}</a></th>
+            <th><a href="#/modelo/${esc(b.id)}">${thumbOf(b)}<span>${esc(nameOf(b))}</span></a></th>
           </tr></thead>
           <tbody>${rows}</tbody>
         </table>
@@ -401,13 +491,18 @@
     (e) => {
       const img = e.target;
       if (!(img instanceof HTMLImageElement)) return;
-      const wrap = img.closest(".model-img, .detail-hero");
+      const slide = img.closest(".gallery-slide");
+      if (slide) { slide.remove(); return; }
+      const wrap = img.closest(".model-img, .detail-hero, .brand-logo");
       if (!wrap) return;
       img.remove();
       wrap.style.cssText = wrap.dataset.phStyle || "";
       if (wrap.classList.contains("model-img")) {
         wrap.classList.remove("has-photo");
         wrap.classList.add("ph-m");
+        wrap.textContent = wrap.dataset.phName || "";
+      } else if (wrap.classList.contains("brand-logo")) {
+        wrap.classList.remove("has-logo");
         wrap.textContent = wrap.dataset.phName || "";
       }
     },

@@ -109,21 +109,36 @@ Para las marcas gigantes (BMW, Mercedes, Toyota, VW, Chevrolet) esta es una **pr
 
 Próximas marcas sugeridas: Ford, Honda, Nissan, Audi, Lamborghini, Jaguar, Fiat, Peugeot, Renault; y clásicas como Studebaker, Packard, Tucker, DeSoto, Lancia.
 
-## Imágenes
+## Imágenes, galerías y logos
 
-Cada modelo muestra la imagen principal de su artículo de Wikipedia (en inglés), hotlinkeada desde **Wikimedia Commons**:
+Cada modelo tiene una **galería de hasta 4 fotos** (scroll horizontal en el detalle, imagen completa sin recortar) hotlinkeadas desde **Wikimedia Commons**, y cada marca su **logo real**:
 
-- `images[0]`: URL del thumbnail (1200 px) en `upload.wikimedia.org`.
-- `imageSource`: artículo o página de Commons de origen — el detalle de cada modelo la enlaza como crédito. Las licencias varían por imagen (CC BY-SA, dominio público, etc.) y figuran en esa página.
-- Si una imagen remota falla, la UI cae automáticamente al placeholder de gradiente.
+- `images`: array de URLs (la primera es la principal, usada en cards y comparador).
+- `imageSource`: artículo o página de Commons de origen — el detalle la enlaza como crédito. Las licencias varían por imagen (CC BY-SA, dominio público, etc.) y figuran en esa página.
+- `logo` (en `brands.json`): logo de la marca desde Commons; si falla, la UI vuelve al monograma.
+- Si una imagen remota falla, la UI cae automáticamente al placeholder / saca el slide roto.
 
-Para poblar imágenes de modelos nuevos (solo procesa los que no tienen):
+Scripts (solo procesan entradas sin imagen ⇒ re-ejecutables al agregar datos):
 
 ```
-node tools/fetch-images.mjs
+node tools/fetch-images.mjs    # foto principal (Wikipedia pageimage + fallback Commons)
+node tools/fetch-gallery.mjs   # completa la galería hasta 4 fotos (búsqueda en Commons)
+node tools/fetch-logos.mjs     # logos de marcas
 ```
 
-El script intenta, en orden: el campo `wiki` del modelo, un mapa de títulos especiales (`OVERRIDES`), variantes de "Marca Nombre", y como último recurso una búsqueda de archivos en Commons. Para forzar otro título, agregá `"wiki": "Título exacto del artículo"` a la entrada del modelo. También podés pegar cualquier URL de imagen a mano en `images` — el script no la pisa.
+Para forzar otro artículo, agregá `"wiki": "Título exacto"` a la entrada del modelo. También podés pegar URLs a mano en `images` — los scripts no las pisan.
+
+## Versiones y variantes
+
+Los modelos vigentes importantes llevan un campo opcional `versions` con su gama actual (ej. Serie 5 → 520i … M5; Corvette → Stingray … ZR1), que el detalle muestra como tabla:
+
+```json
+"versions": [{ "name": "M5", "power": "727 CV", "note": "V8 4.4 biturbo híbrido enchufable" }]
+```
+
+## Organización de la página de marca
+
+Los modelos de cada marca se muestran en dos secciones — **En producción** (más nuevos primero) y **Clásicos e históricos** (cronológico) — con chips de filtro por categoría (deportivo, SUV, sedán…).
 
 ## Guardados
 
