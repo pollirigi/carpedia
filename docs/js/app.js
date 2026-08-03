@@ -116,6 +116,54 @@
       </article>`;
   };
 
+  // Sección de generaciones: imagen verificada por generación y versiones
+  // deportivas separadas de las normales. Sin imagen verificada → placeholder.
+  const genSectionHtml = (model) => {
+    const gens = model.generations || [];
+    if (!gens.length) return "";
+
+    const media = (img, source, alt, phId) =>
+      img
+        ? `<a class="gen-media" href="${esc(source || img)}" target="_blank" rel="noopener" title="Ver origen en Wikimedia Commons"><img src="${esc(img)}" alt="${esc(alt)}" loading="lazy" data-ph-style="${placeholderStyle(phId)}"></a>`
+        : `<div class="gen-media gen-ph" style="${placeholderStyle(phId)}"><span>Sin foto verificada</span></div>`;
+
+    const sportItem = (s, g) => `
+      <div class="sport-item">
+        ${
+          s.image
+            ? `<a href="${esc(s.imageSource || s.image)}" target="_blank" rel="noopener"><img src="${esc(s.image)}" alt="${esc(s.name)}" loading="lazy" data-ph-style="${placeholderStyle(model.id + s.name)}"></a>`
+            : `<div class="sport-ph" style="${placeholderStyle(model.id + s.name)}">sin foto</div>`
+        }
+        <span class="sport-name">${esc(s.name)}</span>
+      </div>`;
+
+    return `
+      <h2 class="section-title">📅 Generaciones y versiones</h2>
+      <div class="gen-grid">
+        ${gens
+          .map(
+            (g) => `
+        <article class="gen-card">
+          ${media(g.image, g.imageSource, `${model.name} ${g.code}`, model.id + g.code)}
+          <div class="gen-body">
+            <div class="gen-head">
+              <h3>${esc(g.code)}</h3>
+              <span class="gen-years">${esc(g.years)}</span>
+              ${g.tipo === "deportiva" ? `<span class="chip sport-chip">deportiva</span>` : ""}
+            </div>
+            ${g.trims ? `<p class="gen-trims">Versiones: ${esc(g.trims)}</p>` : ""}
+            ${
+              g.sport && g.sport.length
+                ? `<div class="sport-list"><p class="sport-label">🏁 Versiones deportivas</p>${g.sport.map((s) => sportItem(s, g)).join("")}</div>`
+                : ""
+            }
+          </div>
+        </article>`
+          )
+          .join("")}
+      </div>`;
+  };
+
   const specRow = (label, value, suffix = "") => {
     const has = value !== null && value !== undefined && value !== "";
     return `<div class="spec-row"><span class="k">${esc(label)}</span>
@@ -141,7 +189,14 @@
         )
         .join("");
 
-    const totalPhotos = models.reduce((n, m) => n + (m.images ? m.images.length : 0), 0);
+    const photosOf = (m) =>
+      new Set(
+        [
+          ...(m.images || []),
+          ...(m.generations || []).flatMap((g) => [g.image, ...(g.sport || []).map((s) => s.image)])
+        ].filter(Boolean)
+      ).size;
+    const totalPhotos = models.reduce((n, m) => n + photosOf(m), 0);
     const totalCurrent = models.filter(inProduction).length;
 
     app.innerHTML = `
@@ -273,6 +328,7 @@
         </div>
         ${gallery}
         ${credit}
+        ${genSectionHtml(model)}
         <div class="detail-actions">
           ${saveButtonHtml(model.id, true)}
           <a class="btn" href="#/comparar?a=${esc(model.id)}">⚖️ Comparar este modelo</a>
@@ -314,14 +370,6 @@
             ${specRow("Alto", dim.height, " mm")}
             ${specRow("Distancia entre ejes", dim.wheelbase, " mm")}
             ${specRow("Peso", dim.weight, " kg")}
-          </section>
-          <section class="spec-card">
-            <h3>📅 Generaciones</h3>
-            <ul class="gen-list">
-              ${(model.generations || [])
-                .map((g) => `<li><span>${esc(g.code)}</span><span class="years">${esc(g.years)}</span></li>`)
-                .join("")}
-            </ul>
           </section>
           ${versionsCard}
           ${model.trivia ? `<section class="spec-card wide trivia-card"><h3>💡 Dato curioso</h3><p>${esc(model.trivia)}</p></section>` : ""}
@@ -493,6 +541,24 @@
       if (!(img instanceof HTMLImageElement)) return;
       const slide = img.closest(".gallery-slide");
       if (slide) { slide.remove(); return; }
+      const genMedia = img.closest(".gen-media");
+      if (genMedia) {
+        const ph = document.createElement("div");
+        ph.className = "gen-media gen-ph";
+        ph.style.cssText = img.dataset.phStyle || "";
+        ph.innerHTML = "<span>Sin foto verificada</span>";
+        genMedia.replaceWith(ph);
+        return;
+      }
+      const sportLink = img.closest(".sport-item a");
+      if (sportLink) {
+        const ph = document.createElement("div");
+        ph.className = "sport-ph";
+        ph.style.cssText = img.dataset.phStyle || "";
+        ph.textContent = "sin foto";
+        sportLink.replaceWith(ph);
+        return;
+      }
       const wrap = img.closest(".model-img, .detail-hero, .brand-logo");
       if (!wrap) return;
       img.remove();

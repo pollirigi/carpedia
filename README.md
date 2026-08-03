@@ -68,7 +68,16 @@ Todo el catálogo vive en `docs/data/`. El home muestra **solo** las marcas pres
   "brandId": "toyota",
   "name": "Corolla",
   "years": "1966–presente",
-  "generations": [{ "code": "E10", "years": "1966–1970" }],
+  "generations": [
+    {
+      "code": "E80",
+      "years": "1983–1987",
+      "trims": "1.3 · 1.6 · FX",
+      "image": null,
+      "imageSource": null,
+      "sport": [{ "name": "AE86 Levin / Trueno", "image": null, "imageSource": null }]
+    }
+  ],
   "category": "sedán",
   "images": [],
   "specsVersion": "Corolla 1.8 (2020)",
@@ -77,6 +86,8 @@ Todo el catálogo vive en `docs/data/`. El home muestra **solo** las marcas pres
   "dataNotes": "opcional: aclaraciones sobre datos no confirmados"
 }
 ```
+
+La estructura es **marca > modelo > generación > versión**: cada generación es una entrada individual con su propia imagen, y las versiones deportivas (`sport`) van separadas de las normales (`trims`) — un 320i nunca comparte sección (ni foto) con un M3 de la misma generación. El mapa curado de generaciones vive en `tools/gen-map.mjs`; `node tools/restructure.mjs` lo aplica sobre `models.json`.
 
 Reglas de datos:
 
@@ -118,15 +129,17 @@ Cada modelo tiene una **galería de hasta 4 fotos** (scroll horizontal en el det
 - `logo` (en `brands.json`): logo de la marca desde Commons; si falla, la UI vuelve al monograma.
 - Si una imagen remota falla, la UI cae automáticamente al placeholder / saca el slide roto.
 
-Scripts (solo procesan entradas sin imagen ⇒ re-ejecutables al agregar datos):
+Las imágenes se traen **exclusivamente con la API oficial de Wikimedia Commons** (`commons.wikimedia.org/w/api.php`, sin login ni scraping). Cada archivo se acepta solo si su **título o categorías en Commons matchean marca + modelo + generación** (regexes de `tools/gen-map.mjs` o tokens derivados del código de generación). Si nada matchea, el hueco queda en `null` y la UI muestra un placeholder — nunca la foto de otro auto.
+
+Scripts (solo procesan huecos ⇒ re-ejecutables al agregar datos):
 
 ```
-node tools/fetch-images.mjs    # foto principal (Wikipedia pageimage + fallback Commons)
-node tools/fetch-gallery.mjs   # completa la galería hasta 4 fotos (búsqueda en Commons)
+node tools/restructure.mjs     # aplica gen-map.mjs al esquema por generación
+node tools/fetch-commons.mjs   # imágenes verificadas por generación/versión (API de Commons)
 node tools/fetch-logos.mjs     # logos de marcas
 ```
 
-Para forzar otro artículo, agregá `"wiki": "Título exacto"` a la entrada del modelo. También podés pegar URLs a mano en `images` — los scripts no las pisan.
+`fetch-commons.mjs` deja un reporte en `tools/image-report.json` con cada asignación y cada hueco (`SIN IMAGEN`). Con `ONLY=id1,id2` se procesa un subconjunto. También podés pegar URLs a mano en `image`/`images` — el script no las pisa. (Los scripts viejos `fetch-images.mjs` / `fetch-gallery.mjs` quedaron obsoletos.)
 
 ## Versiones y variantes
 
